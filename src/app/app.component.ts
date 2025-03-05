@@ -29,5 +29,6 @@ export class AppComponent {
 
 	deleteValue() {
 		Preferences.remove({ key: "isLoaded" });
+		console.log('delete')
 	}
 }

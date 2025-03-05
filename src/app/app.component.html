@@ -1,7 +1,9 @@
 <h1 class="text-xl text-center mt-4 text-amber-300 font-bold">
 	Welcome to {{ title }}! From Capacitor Storage: {{ fromCapacitorStorage }}
 </h1>
-<button (click)="getValue()">Get Value</button>
-<button (click)="deleteValue()">Delete Value</button>
+<br>
+<button (click)="getValue()" class="bg-green-600">Get Value</button>
+<br>
+<button (click)="deleteValue()" class="bg-red-500">Delete Value</button>
 
 <router-outlet />
