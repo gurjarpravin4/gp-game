@@ -1,9 +1,14 @@
-<h1 class="text-xl text-center mt-4 text-amber-300 font-bold">
-	Welcome to {{ title }}! From Capacitor Storage: {{ fromCapacitorStorage }}
-</h1>
-<br>
-<button (click)="getValue()" class="bg-green-600">Get Value</button>
-<br>
-<button (click)="deleteValue()" class="bg-red-500">Delete Value</button>
+<div class="app-container">
+	@if (!gameState.isLoaded()) {
+	<app-splash-screen />
+	} @else {
+	<router-outlet />
+	}
+</div>
 
-<router-outlet />
+<style>
+	@import "tailwindcss";
+	.app-container {
+		@apply w-full max-w-md mx-auto min-h-screen flex flex-col items-center justify-center px-4;
+	}
+</style>
