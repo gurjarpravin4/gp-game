@@ -3,7 +3,7 @@ export enum Gender {
 	Female = "Female",
 }
 
-export enum MaleCharacters {
+export enum MaleCharacter {
 	Vikrant = "Vikrant",
 	Kshitij = "Kshitij",
 	Samir = "Samir",
@@ -11,7 +11,7 @@ export enum MaleCharacters {
 	Anant = "Anant",
 }
 
-export enum FemaleCharacters {
+export enum FemaleCharacter {
 	Samira = "Samira",
 	Bhumi = "Bhumi",
 	Anika = "Anika",
