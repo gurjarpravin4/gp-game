@@ -20,8 +20,8 @@ export class GameStateService {
 		await Preferences.set({ key: Keys.isLoaded, value: value.toString() });
 	}
 
-	async setGender(value: Gender) {
-		this.gender.set(value);
+	async setGender(value: string) {
+		this.gender.set(value as Gender);
 		await Preferences.set({ key: Keys.gender, value: value });
 	}
 
@@ -36,6 +36,7 @@ export class GameStateService {
 
 	async getGender() {
 		const genderString = (await Preferences.get({ key: Keys.gender })).value;
+		console.log("Gender", genderString);
 		// parse a string to an enum
 		if (genderString && Object.values(Gender).includes(genderString as Gender))
 			this.gender.set(genderString as Gender);
@@ -44,6 +45,7 @@ export class GameStateService {
 
 	async getCharacter() {
 		const chString = (await Preferences.get({ key: Keys.character })).value;
+		console.log("Character", chString);
 		if (!chString) {
 			this.character.set(null);
 			return;

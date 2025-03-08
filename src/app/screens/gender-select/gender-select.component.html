@@ -1,0 +1,9 @@
+<p class="text-center text-xl mb-1">Select Gender</p>
+@for (gender of genders; track $index) {
+<button
+	(click)="selectGender(gender)"
+	class="primary-btn"
+>
+	{{ gender }}
+</button>
+}

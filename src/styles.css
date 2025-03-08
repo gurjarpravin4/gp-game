@@ -1,2 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
+
+.primary-btn {
+    @apply bg-orange-500 p-2 rounded-3xl w-sm m-2 text-white
+}
