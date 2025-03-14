@@ -31,4 +31,9 @@ export class CharacterSelectComponent {
 		this.router.navigateByUrl("/");
 		console.log(this.gameState.character());
 	}
+
+	navigateBack() {
+		this.gameState.removeGender();
+		this.router.navigateByUrl("gender-select");
+	}
 }

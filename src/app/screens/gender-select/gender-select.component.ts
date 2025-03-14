@@ -15,9 +15,12 @@ export class GenderSelectComponent {
 	genders: Gender[] = Object.values(Gender);
 
 	async selectGender(gender: string) {
-		await this.gameState.setGender(gender);
-		console.log(this.gameState.gender());
-		if (gender === Gender.Male) this.router.navigateByUrl("character-select");
-		if (gender === Gender.Female) this.router.navigateByUrl("character-select");
+		try {
+			await this.gameState.setGender(gender);
+			console.log(this.gameState.gender());
+			this.router.navigateByUrl("character-select");
+		} catch {
+			console.log("error");
+		}
 	}
 }

@@ -47,6 +47,11 @@ export class GameStateService {
 		else this.gender.set(null);
 	}
 
+	async removeGender() {
+		await Preferences.remove({ key: Keys.gender });
+		this.gender.set(null);
+	}
+
 	async getCharacter() {
 		const chString = (await Preferences.get({ key: Keys.character })).value;
 		console.log("Character", chString);
