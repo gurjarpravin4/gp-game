@@ -1,0 +1,13 @@
+<div
+	class="w-fit h-fit flex flex-col gap-3 items-center justify-evenly"
+	(click)="onSelected()"
+>
+	<div class="rounded-full w-[121px] h-[121px]">
+		<img
+			[src]="imgUrl()"
+			[alt]="name"
+			class="rounded-full w-[121px] h-[121px] mx-auto object-fit"
+		/>
+	</div>
+	<h3 class="choice-text">{{ name }}</h3>
+</div>

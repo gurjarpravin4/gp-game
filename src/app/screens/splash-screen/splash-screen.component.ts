@@ -19,8 +19,8 @@ export class SplashScreenComponent {
 	element = inject(ElementRefManagerService);
 	showSubtitle = signal(false);
 
-	@ViewChild("titleText", { static: false })
-	titleText!: ElementRef;
+	// @ViewChild("titleText", { static: false })
+	// titleText!: ElementRef;
 
 	scaleText(element: ElementRef) {
 		setTimeout(() => this.element.addClass(element, "scale-[1.1]"), 500);
@@ -43,10 +43,10 @@ export class SplashScreenComponent {
 	async loadSplashScreen() {
 		this.gameState.setIsLoaded(false);
 		// Animation for splash screen
-		this.scaleText(this.titleText);
-        setTimeout(() => this.showSubtitle.set(true), 1500)
+		// this.scaleText(this.titleText);
+		setTimeout(() => this.showSubtitle.set(true), 1500);
 		// Delay/ wait time for splash screen, will disappearch after 3.5 sec
-		setTimeout(() => this.gameState.setIsLoaded(true), 3500);
+		setTimeout(() => this.gameState.setIsLoaded(true), 2000);
 
 		// this.typewriteText(
 		// 	this.gameState.title,

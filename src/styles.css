@@ -43,5 +43,5 @@
 
 /* Buttons */
 .choice-btn {
-    @apply w-[353px] h-[60px] px-[18px] py-[16px] bg-primary-2 rounded-xl
+    @apply w-[353px] h-[60px] px-[18px] py-[16px] bg-primary-2 rounded-xl cursor-pointer
 }

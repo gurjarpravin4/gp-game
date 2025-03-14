@@ -31,6 +31,7 @@ export class GameStateService {
 	async setCharacter(value: MaleCharacter | FemaleCharacter) {
 		this.character.set(value);
 		await Preferences.set({ key: Keys.character, value: value });
+		console.log(value);
 	}
 
 	async getIsLoaded(key: Keys) {
