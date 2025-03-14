@@ -1,9 +1,26 @@
-<p class="text-center text-xl mb-1">Select Gender</p>
-@for (gender of genders; track $index) {
-<button
-	(click)="selectGender(gender)"
-	class="primary-btn"
->
-	{{ gender }}
-</button>
-}
+<div class="h-full w-full flex flex-col items-center justify-evenly">
+	<h1 class="title-text text-center">
+		{{ gameState.titleLine1 }} <br />
+		{{ gameState.titleLine2 }}
+	</h1>
+
+	<div class="text-center heading-text w-[250px] overflow-visible">
+		Welcome to the city of Vrittapuram!
+	</div>
+
+	<div class="flex flex-col gap-8">
+		<h3 class="text-center choice-text">Select Gender</h3>
+		@for (gender of genders; track $index) {
+		<button
+			(click)="selectGender(gender)"
+			class="choice-btn choice-text"
+		>
+			{{ gender }}
+		</button>
+		}
+	</div>
+</div>
+
+<style>
+	@import "../../../styles.css";
+</style>

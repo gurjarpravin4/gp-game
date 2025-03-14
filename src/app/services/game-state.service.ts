@@ -11,6 +11,9 @@ import { Preferences } from "@capacitor/preferences";
 	providedIn: "root",
 })
 export class GameStateService {
+	readonly titleLine1 = "Yuga".toUpperCase();
+	readonly titleLine2 = "Chronicles".toUpperCase();
+	readonly subtitle = "Weaving life through choices";
 	isLoaded = signal<boolean | null>(false);
 	gender = signal<Gender | null>(null);
 	character = signal<MaleCharacter | FemaleCharacter | null>(null);

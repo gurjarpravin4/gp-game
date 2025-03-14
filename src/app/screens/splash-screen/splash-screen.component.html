@@ -1,6 +1,9 @@
-<div class="w-svw h-svh flex justify-center items-center bg-amber-300">
-	<h1
-		class="text-2xl text-orange-500 font-bold duration-1000"
-		#welcomeText
-	></h1>
+<div
+	class="w-full h-full flex flex-col justify-center items-center bg-primary-1 mb-2"
+>
+	<h1 class="text-center title-text">
+		{{ gameState.titleLine1 }} <br />
+		{{ gameState.titleLine2 }}
+	</h1>
+	<h2 class="body-text">{{ gameState.subtitle }}</h2>
 </div>

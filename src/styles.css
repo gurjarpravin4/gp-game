@@ -1,6 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
 
-.primary-btn {
-    @apply bg-orange-500 p-2 rounded-3xl w-sm m-2 text-white
+/* Setting up font faces */
+@font-face {
+    font-family: Tungsten;
+    src: url('/fonts/Tungsten-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+/* Theme for the game */
+@theme {
+    /* Colors */
+    --color-primary-1: #4B0082;
+    --color-primary-2: #EFA74E;
+    --color-neutral-1: #F2F2F7;
+    --color-neutral-2: #1B1B1B;
+    /* Fonts */
+    --font-heading: Tungsten, sans-serif;
+    --font-title: Amarante, sans-serif;
+    --font-body: Hind Madurai, sans-serif;
+}
+
+
+/* Custom Directives */
+/* Typography */
+.body-text {
+    @apply font-body text-neutral-1 font-normal text-[16px]
+}
+
+.choice-text {
+    @apply font-body text-neutral-1 font-medium text-[28px] leading-[36px]
+}
+
+.heading-text {
+    @apply font-heading text-primary-2 font-normal text-4xl leading-[44px] tracking-[0.03em]
+}
+
+.title-text {
+    @apply font-title text-neutral-1 font-normal text-[57px] leading-[64px]
+}
+
+
+/* Buttons */
+.choice-btn {
+    @apply w-[353px] h-[60px] px-[18px] py-[16px] bg-primary-2 rounded-xl
 }

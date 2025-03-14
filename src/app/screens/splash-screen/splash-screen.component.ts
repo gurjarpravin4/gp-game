@@ -1,7 +1,12 @@
-import { Component, ElementRef, inject, ViewChild } from "@angular/core";
+import {
+	Component,
+	ElementRef,
+	inject,
+	signal,
+	ViewChild,
+} from "@angular/core";
 import { GameStateService } from "../../services/game-state.service";
 import { ElementRefManagerService } from "../../services/element-ref-manager.service";
-import { Gender } from "../../enums/game-enums";
 
 @Component({
 	selector: "app-splash-screen",
@@ -12,13 +17,14 @@ import { Gender } from "../../enums/game-enums";
 export class SplashScreenComponent {
 	gameState = inject(GameStateService);
 	element = inject(ElementRefManagerService);
+	showSubtitle = signal(false);
 
-	@ViewChild("welcomeText", { static: false })
-	welcomeText!: ElementRef;
+	@ViewChild("titleText", { static: false })
+	titleText!: ElementRef;
 
 	scaleText(element: ElementRef) {
-		setTimeout(() => this.element.addClass(element, "scale-150"), 500);
-		setTimeout(() => this.element.removeClass(element, "scale-150"), 1000);
+		setTimeout(() => this.element.addClass(element, "scale-[1.1]"), 500);
+		setTimeout(() => this.element.removeClass(element, "scale-[1.1]"), 1000);
 	}
 
 	typewriteText(text: string, element: ElementRef, onComplete?: () => void) {
@@ -36,15 +42,21 @@ export class SplashScreenComponent {
 
 	async loadSplashScreen() {
 		this.gameState.setIsLoaded(false);
+		// Animation for splash screen
+		this.scaleText(this.titleText);
+        setTimeout(() => this.showSubtitle.set(true), 1500)
+		// Delay/ wait time for splash screen, will disappearch after 3.5 sec
+		setTimeout(() => this.gameState.setIsLoaded(true), 3500);
 
-		this.typewriteText(
-			"Welcome to gp-game!",
-			this.welcomeText,
-			() => this.scaleText(this.welcomeText) // scale after typing is done by using onComplete function
-		);
-        setTimeout(() => this.gameState.setIsLoaded(true), 3500);
+		// this.typewriteText(
+		// 	this.gameState.title,
+		// 	this.welcomeText,
+		// 	() => {
+		// 		this.scaleText(this.welcomeText);
+		// 		this.showSubtitle.set(true);
+		// 	} // scale after typing is done by using onComplete function
+		// );
 	}
-
 
 	ngAfterViewInit() {
 		this.loadSplashScreen();
