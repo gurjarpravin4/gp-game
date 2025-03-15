@@ -10,7 +10,7 @@
 	<p class="body-text">This button is just to reset (for testing purposes)</p>
 
 	<button
-		(click)="storyManager.goToPassage('1')"
+		(click)="storyManager.goToPassage(storyManager.currentPassageId())"
 		class="choice-btn choice-text"
 	>
 		Open {{ gameState.character() }}'s story

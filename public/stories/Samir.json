@@ -23,7 +23,7 @@
 			"text": "You walk through a dense forest, the scent of sandalwood thick in the air. Suddenly, you hear desperate footsteps—someone running. A young villager stumbles into your path, gasping.\n\"Please! A bandit is after me!\" they plead.\n\n[[choice-1]]",
 			"links": [
 				{
-					"linkText": "choice-1",
+					"linkText": "Continue",
 					"pId": "3",
 					"original": "[[choice-1]]"
 				}
@@ -37,37 +37,37 @@
 			"text": "What will you do?\n\n[[HpassageIde the villager in the trees|HpassageIde]]\n\n[[Stand your ground and face the bandit|Confront]]\n\n[[Question the villager before helping|Question]]",
 			"links": [
 				{
-					"linkText": "HpassageIde the villager in the trees|HpassageIde",
-					"pId": "HpassageIde the villager in the trees|HpassageIde",
+					"linkText": "Hide the villager in the trees",
+					"pId": "4",
 					"original": "[[HpassageIde the villager in the trees|HpassageIde]]"
 				},
 				{
-					"linkText": "Stand your ground and face the bandit|Confront",
-					"pId": "Stand your ground and face the bandit|Confront",
+					"linkText": "Stand your ground and face the bandit",
+					"pId": "5",
 					"original": "[[Stand your ground and face the bandit|Confront]]"
 				},
 				{
-					"linkText": "Question the villager before helping|Question",
-					"pId": "Question the villager before helping|Question",
+					"linkText": "Question the villager before helping",
+					"pId": "6",
 					"original": "[[Question the villager before helping|Question]]"
 				}
 			],
 			"cleanText": "What will you do?"
 		},
 		{
-			"name": "HpassageIde",
+			"name": "Hide",
 			"imageURL": "images/Samir/4.webp",
 			"passageId": "4",
 			"text": "You quickly point to the hollow of an ancient tree. The villager hpassageIdes just as the bandit appears, eyes scanning the area.\n\"Have you seen someone run this way?\" he growls.\n\n[[Lie and say no one came this way|Lie]]\n\n[[Tell the truth and point to the tree|Truth]]",
 			"links": [
 				{
-					"linkText": "Lie and say no one came this way|Lie",
-					"pId": "Lie and say no one came this way|Lie",
+					"linkText": "Lie and say no one came this way",
+					"pId": "7",
 					"original": "[[Lie and say no one came this way|Lie]]"
 				},
 				{
-					"linkText": "Tell the truth and point to the tree|Truth",
-					"pId": "Tell the truth and point to the tree|Truth",
+					"linkText": "Tell the truth and point to the tree",
+					"pId": "8",
 					"original": "[[Tell the truth and point to the tree|Truth]]"
 				}
 			],
@@ -80,13 +80,13 @@
 			"text": "You plant your staff firmly in the ground. \"Violence breeds only suffering,\" you warn. The bandit hesitates.\n\"I seek what is mine!\" he growls.\n\n[[Offer him food and wisdom|Wisdom]]\n[[Challenge him to a duel of wits|Duel]]",
 			"links": [
 				{
-					"linkText": "Offer him food and wisdom|Wisdom",
-					"pId": "Offer him food and wisdom|Wisdom",
+					"linkText": "Offer him food and wisdom",
+					"pId": "14",
 					"original": "[[Offer him food and wisdom|Wisdom]]"
 				},
 				{
-					"linkText": "Challenge him to a duel of wits|Duel",
-					"pId": "Challenge him to a duel of wits|Duel",
+					"linkText": "Challenge him to a duel of wits",
+					"pId": "15",
 					"original": "[[Challenge him to a duel of wits|Duel]]"
 				}
 			],
@@ -99,8 +99,8 @@
 			"text": "Who are you? Why is he after you?\n\n[[Continue| scene 7]]",
 			"links": [
 				{
-					"linkText": "Continue| scene 7",
-					"pId": "Continue| scene 7",
+					"linkText": "Continue",
+					"pId": "16",
 					"original": "[[Continue| scene 7]]"
 				}
 			],
@@ -113,8 +113,8 @@
 			"text": "\"No, traveler, I have seen no one,\" you say calmly. The bandit frowns, grunts, and walks away.\n\n[[Continue| scene 3]]",
 			"links": [
 				{
-					"linkText": "Continue| scene 3",
-					"pId": "Continue| scene 3",
+					"linkText": "Continue",
+					"pId": "9",
 					"original": "[[Continue| scene 3]]"
 				}
 			],
@@ -127,8 +127,8 @@
 			"text": "You point toward the tree, and the bandit's lips curl into a smirk. He drags the villager away.\n [[Continue| scene 5]]",
 			"links": [
 				{
-					"linkText": "Continue| scene 5",
-					"pId": "Continue| scene 5",
+					"linkText": "Continue",
+					"pId": "12",
 					"original": "[[Continue| scene 5]]"
 				}
 			],
@@ -141,8 +141,8 @@
 			"text": "The villager emerges, bowing deeply. \"Thank you, wise one. I shall never forget this.\"\n\n[[Continue| scene 4]]",
 			"links": [
 				{
-					"linkText": "Continue| scene 4",
-					"pId": "Continue| scene 4",
+					"linkText": "Continue",
+					"pId": "10",
 					"original": "[[Continue| scene 4]]"
 				}
 			],
@@ -156,7 +156,7 @@
 			"links": [
 				{
 					"linkText": "Continue your Journey",
-					"pId": "The Dilemma of Dharma",
+					"pId": "11",
 					"original": "[[Continue your Journey ->The Dilemma of Dharma]]"
 				}
 			],
@@ -169,8 +169,8 @@
 			"text": "The end!\n\n[[continue|Untitled Passage]]",
 			"links": [
 				{
-					"linkText": "continue|Untitled Passage",
-					"pId": "continue|Untitled Passage",
+					"linkText": "Continue",
+					"pId": "game-home",
 					"original": "[[continue|Untitled Passage]]"
 				}
 			],
@@ -183,8 +183,8 @@
 			"text": "Later, guilt gnaws at you. Was it truly righteous to tell the truth at the cost of another’s life?\n\n[[Continue| scene 6]]",
 			"links": [
 				{
-					"linkText": "Continue| scene 6",
-					"pId": "Continue| scene 6",
+					"linkText": "Continue",
+					"pId": "13",
 					"original": "[[Continue| scene 6]]"
 				}
 			],
@@ -197,8 +197,8 @@
 			"text": "You have upheld honesty, but at what cost?\n\n[[Reflect on your actions|The Dilemma of Dharma]]",
 			"links": [
 				{
-					"linkText": "Reflect on your actions|The Dilemma of Dharma",
-					"pId": "Reflect on your actions|The Dilemma of Dharma",
+					"linkText": "Reflect on your actions",
+					"pId": "11",
 					"original": "[[Reflect on your actions|The Dilemma of Dharma]]"
 				}
 			],
@@ -211,8 +211,8 @@
 			"text": "You share a parable of greed and consequence. The bandit, touched, sighs. \"Perhaps I have lost my way...\" He drops his sword and walks into the forest, a changed man.\n\n🕊 A kind word turned away wrath.\n\n[[Continue your journey|The Dilemma of Dharma]]",
 			"links": [
 				{
-					"linkText": "Continue your journey|The Dilemma of Dharma",
-					"pId": "Continue your journey|The Dilemma of Dharma",
+					"linkText": "Continue your journey",
+					"pId": "11",
 					"original": "[[Continue your journey|The Dilemma of Dharma]]"
 				}
 			],
@@ -225,8 +225,8 @@
 			"text": "You kill the man and save the villager's life\n\n[[You won, but at what cost?|The Dilemma of Dharma]]",
 			"links": [
 				{
-					"linkText": "You won, but at what cost?|The Dilemma of Dharma",
-					"pId": "You won, but at what cost?|The Dilemma of Dharma",
+					"linkText": "You won, but at what cost?",
+					"pId": "11",
 					"original": "[[You won, but at what cost?|The Dilemma of Dharma]]"
 				}
 			],
@@ -239,8 +239,8 @@
 			"text": "I... I...\n\n[[Continue|scene 8]]",
 			"links": [
 				{
-					"linkText": "Continue|scene 8",
-					"pId": "Continue|scene 8",
+					"linkText": "Continue",
+					"pId": "17",
 					"original": "[[Continue|scene 8]]"
 				}
 			],
@@ -253,8 +253,8 @@
 			"text": "The attacker catches up and finishes the job\n[[Go back|The Dilemma of Dharma]]",
 			"links": [
 				{
-					"linkText": "Go back|The Dilemma of Dharma",
-					"pId": "Go back|The Dilemma of Dharma",
+					"linkText": "Continue",
+					"pId": "11",
 					"original": "[[Go back|The Dilemma of Dharma]]"
 				}
 			],

@@ -15,7 +15,7 @@ export class StoryControllerService {
 	router = inject(Router);
 
 	story = signal<Story | null>(null);
-	currentPassageId = signal<string | null>("");
+	currentPassageId = signal<string | undefined>("");
 	currentPassage = signal<Passage | undefined>(undefined);
 
 	async getCurrentPassageId() {
@@ -37,8 +37,8 @@ export class StoryControllerService {
 	}
 
 	goToPassage(id: string | undefined) {
-		this.router.navigateByUrl(`story-passage/${id}`);
-		console.log("clicked, pId", id);
+		if (id === "game-home") this.router.navigateByUrl("");
+		else this.router.navigateByUrl(`story-passage/${id}`);
 	}
 
 	getStory(character: MaleCharacter | FemaleCharacter | null) {

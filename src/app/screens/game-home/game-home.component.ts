@@ -26,6 +26,7 @@ export class GameHomeComponent {
 	async clearData() {
 		await Preferences.remove({ key: Keys.gender });
 		await Preferences.remove({ key: Keys.character });
+		await Preferences.remove({ key: Keys.currentPassageId });
 		this.gameState.gender.set(null);
 		this.gameState.character.set(null);
 	}

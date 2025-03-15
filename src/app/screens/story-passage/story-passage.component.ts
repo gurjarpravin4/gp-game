@@ -20,14 +20,16 @@ export class StoryPassageComponent {
 		this.route.params.subscribe((params) => {
 			// fetch the passageId from route params
 			this.passageId.set(params["passageId"]);
-			console.log("passageId", this.passageId());
+
 			// get the passage from the story data
 			this.storyManager.getCurrentPassage(this.passageId());
-			console.log("passage", this.storyManager.currentPassage());
+
 			// set the imageUrl
 			this.imgURL = this.storyManager.currentPassage()?.imageURL;
+
 			// update the currentPassageId
 			this.storyManager.setCurrentPassageId(this.passageId());
+			console.log("passageId updated", this.storyManager.currentPassageId());
 		});
 	}
 }
