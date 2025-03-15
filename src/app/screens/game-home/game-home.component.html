@@ -8,4 +8,11 @@
 		Clear Saved Data
 	</button>
 	<p class="body-text">This button is just to reset (for testing purposes)</p>
+
+	<button
+		(click)="storyManager.goToPassage('1')"
+		class="choice-btn choice-text"
+	>
+		Open {{ gameState.character() }}'s story
+	</button>
 </div>

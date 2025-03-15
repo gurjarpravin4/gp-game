@@ -23,4 +23,5 @@ export enum Keys {
 	isLoaded = "isLoaded",
 	gender = "gender",
 	character = "character",
+	currentPassageId = "currentPassageId",
 }

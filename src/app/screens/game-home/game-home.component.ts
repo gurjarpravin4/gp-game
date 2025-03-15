@@ -1,7 +1,9 @@
 import { Component, inject } from "@angular/core";
 import { Preferences } from "@capacitor/preferences";
-import { Keys } from "../../enums/game-enums";
+import { FemaleCharacter, Keys, MaleCharacter } from "../../enums/game-enums";
 import { GameStateService } from "../../services/game-state.service";
+import { Router } from "@angular/router";
+import { StoryControllerService } from "../../services/story-controller.service";
 
 @Component({
 	selector: "app-game-home",
@@ -11,6 +13,15 @@ import { GameStateService } from "../../services/game-state.service";
 })
 export class GameHomeComponent {
 	gameState = inject(GameStateService);
+	storyManager = inject(StoryControllerService);
+	router = inject(Router);
+
+	ngOnInit() {
+		// get the character's story
+		this.storyManager.getStory(this.gameState.character());
+		// get the current passage
+		this.storyManager.getCurrentPassageId();
+	}
 
 	async clearData() {
 		await Preferences.remove({ key: Keys.gender });

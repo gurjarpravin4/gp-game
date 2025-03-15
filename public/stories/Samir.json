@@ -1,0 +1,264 @@
+{
+	"storyId": "1",
+	"name": "Dilemma of Dharma JSON",
+	"passages": [
+		{
+			"name": "Untitled Passage",
+			"imageURL": "images/Samir/1.webp",
+			"passageId": "1",
+			"text": "You are a wandering sage in ancient Bharat, traveling through the forests when you encounter a crucial moral decision...\n\n[[scene 2]]",
+			"links": [
+				{
+					"linkText": "Continue",
+					"pId": "2",
+					"original": "[[scene 2]]"
+				}
+			],
+			"cleanText": "You are a wandering sage in ancient Bharat, traveling through the forests when you encounter a crucial moral decision..."
+		},
+		{
+			"name": "scene 2",
+			"imageURL": "images/Samir/2.webp",
+			"passageId": "2",
+			"text": "You walk through a dense forest, the scent of sandalwood thick in the air. Suddenly, you hear desperate footsteps—someone running. A young villager stumbles into your path, gasping.\n\"Please! A bandit is after me!\" they plead.\n\n[[choice-1]]",
+			"links": [
+				{
+					"linkText": "choice-1",
+					"pId": "3",
+					"original": "[[choice-1]]"
+				}
+			],
+			"cleanText": "You walk through a dense forest, the scent of sandalwood thick in the air. Suddenly, you hear desperate footsteps—someone running. A young villager stumbles into your path, gasping.\n\"Please! A bandit is after me!\" they plead."
+		},
+		{
+			"name": "choice-1",
+			"imageURL": "images/Samir/3.webp",
+			"passageId": "3",
+			"text": "What will you do?\n\n[[HpassageIde the villager in the trees|HpassageIde]]\n\n[[Stand your ground and face the bandit|Confront]]\n\n[[Question the villager before helping|Question]]",
+			"links": [
+				{
+					"linkText": "HpassageIde the villager in the trees|HpassageIde",
+					"pId": "HpassageIde the villager in the trees|HpassageIde",
+					"original": "[[HpassageIde the villager in the trees|HpassageIde]]"
+				},
+				{
+					"linkText": "Stand your ground and face the bandit|Confront",
+					"pId": "Stand your ground and face the bandit|Confront",
+					"original": "[[Stand your ground and face the bandit|Confront]]"
+				},
+				{
+					"linkText": "Question the villager before helping|Question",
+					"pId": "Question the villager before helping|Question",
+					"original": "[[Question the villager before helping|Question]]"
+				}
+			],
+			"cleanText": "What will you do?"
+		},
+		{
+			"name": "HpassageIde",
+			"imageURL": "images/Samir/4.webp",
+			"passageId": "4",
+			"text": "You quickly point to the hollow of an ancient tree. The villager hpassageIdes just as the bandit appears, eyes scanning the area.\n\"Have you seen someone run this way?\" he growls.\n\n[[Lie and say no one came this way|Lie]]\n\n[[Tell the truth and point to the tree|Truth]]",
+			"links": [
+				{
+					"linkText": "Lie and say no one came this way|Lie",
+					"pId": "Lie and say no one came this way|Lie",
+					"original": "[[Lie and say no one came this way|Lie]]"
+				},
+				{
+					"linkText": "Tell the truth and point to the tree|Truth",
+					"pId": "Tell the truth and point to the tree|Truth",
+					"original": "[[Tell the truth and point to the tree|Truth]]"
+				}
+			],
+			"cleanText": "You quickly point to the hollow of an ancient tree. The villager hpassageIdes just as the bandit appears, eyes scanning the area.\n\"Have you seen someone run this way?\" he growls."
+		},
+		{
+			"name": "Confront",
+			"imageURL": "images/Samir/5.webp",
+			"passageId": "5",
+			"text": "You plant your staff firmly in the ground. \"Violence breeds only suffering,\" you warn. The bandit hesitates.\n\"I seek what is mine!\" he growls.\n\n[[Offer him food and wisdom|Wisdom]]\n[[Challenge him to a duel of wits|Duel]]",
+			"links": [
+				{
+					"linkText": "Offer him food and wisdom|Wisdom",
+					"pId": "Offer him food and wisdom|Wisdom",
+					"original": "[[Offer him food and wisdom|Wisdom]]"
+				},
+				{
+					"linkText": "Challenge him to a duel of wits|Duel",
+					"pId": "Challenge him to a duel of wits|Duel",
+					"original": "[[Challenge him to a duel of wits|Duel]]"
+				}
+			],
+			"cleanText": "You plant your staff firmly in the ground. \"Violence breeds only suffering,\" you warn. The bandit hesitates.\n\"I seek what is mine!\" he growls."
+		},
+		{
+			"name": "Question",
+			"imageURL": "images/Samir/6.webp",
+			"passageId": "6",
+			"text": "Who are you? Why is he after you?\n\n[[Continue| scene 7]]",
+			"links": [
+				{
+					"linkText": "Continue| scene 7",
+					"pId": "Continue| scene 7",
+					"original": "[[Continue| scene 7]]"
+				}
+			],
+			"cleanText": "Who are you? Why is he after you?"
+		},
+		{
+			"name": "Lie",
+			"imageURL": "images/Samir/7.webp",
+			"passageId": "7",
+			"text": "\"No, traveler, I have seen no one,\" you say calmly. The bandit frowns, grunts, and walks away.\n\n[[Continue| scene 3]]",
+			"links": [
+				{
+					"linkText": "Continue| scene 3",
+					"pId": "Continue| scene 3",
+					"original": "[[Continue| scene 3]]"
+				}
+			],
+			"cleanText": "\"No, traveler, I have seen no one,\" you say calmly. The bandit frowns, grunts, and walks away."
+		},
+		{
+			"name": "Truth",
+			"imageURL": "images/Samir/8.webp",
+			"passageId": "8",
+			"text": "You point toward the tree, and the bandit's lips curl into a smirk. He drags the villager away.\n [[Continue| scene 5]]",
+			"links": [
+				{
+					"linkText": "Continue| scene 5",
+					"pId": "Continue| scene 5",
+					"original": "[[Continue| scene 5]]"
+				}
+			],
+			"cleanText": "You point toward the tree, and the bandit's lips curl into a smirk. He drags the villager away."
+		},
+		{
+			"name": " scene 3",
+			"imageURL": "images/Samir/9.webp",
+			"passageId": "9",
+			"text": "The villager emerges, bowing deeply. \"Thank you, wise one. I shall never forget this.\"\n\n[[Continue| scene 4]]",
+			"links": [
+				{
+					"linkText": "Continue| scene 4",
+					"pId": "Continue| scene 4",
+					"original": "[[Continue| scene 4]]"
+				}
+			],
+			"cleanText": "The villager emerges, bowing deeply. \"Thank you, wise one. I shall never forget this.\""
+		},
+		{
+			"name": " scene 4",
+			"imageURL": "images/Samir/10.webp",
+			"passageId": "10",
+			"text": "🏆 Your kindness saved a life.\n\n[[Continue your Journey ->The Dilemma of Dharma]]",
+			"links": [
+				{
+					"linkText": "Continue your Journey",
+					"pId": "The Dilemma of Dharma",
+					"original": "[[Continue your Journey ->The Dilemma of Dharma]]"
+				}
+			],
+			"cleanText": "🏆 Your kindness saved a life."
+		},
+		{
+			"name": "The Dilemma of Dharma",
+			"imageURL": "images/Samir/11.webp",
+			"passageId": "11",
+			"text": "The end!\n\n[[continue|Untitled Passage]]",
+			"links": [
+				{
+					"linkText": "continue|Untitled Passage",
+					"pId": "continue|Untitled Passage",
+					"original": "[[continue|Untitled Passage]]"
+				}
+			],
+			"cleanText": "The end!"
+		},
+		{
+			"name": " scene 5",
+			"imageURL": "images/Samir/12.webp",
+			"passageId": "12",
+			"text": "Later, guilt gnaws at you. Was it truly righteous to tell the truth at the cost of another’s life?\n\n[[Continue| scene 6]]",
+			"links": [
+				{
+					"linkText": "Continue| scene 6",
+					"pId": "Continue| scene 6",
+					"original": "[[Continue| scene 6]]"
+				}
+			],
+			"cleanText": "Later, guilt gnaws at you. Was it truly righteous to tell the truth at the cost of another’s life?"
+		},
+		{
+			"name": " scene 6",
+			"imageURL": "images/Samir/13.webp",
+			"passageId": "13",
+			"text": "You have upheld honesty, but at what cost?\n\n[[Reflect on your actions|The Dilemma of Dharma]]",
+			"links": [
+				{
+					"linkText": "Reflect on your actions|The Dilemma of Dharma",
+					"pId": "Reflect on your actions|The Dilemma of Dharma",
+					"original": "[[Reflect on your actions|The Dilemma of Dharma]]"
+				}
+			],
+			"cleanText": "You have upheld honesty, but at what cost?"
+		},
+		{
+			"name": "Wisdom",
+			"imageURL": "images/Samir/14.webp",
+			"passageId": "14",
+			"text": "You share a parable of greed and consequence. The bandit, touched, sighs. \"Perhaps I have lost my way...\" He drops his sword and walks into the forest, a changed man.\n\n🕊 A kind word turned away wrath.\n\n[[Continue your journey|The Dilemma of Dharma]]",
+			"links": [
+				{
+					"linkText": "Continue your journey|The Dilemma of Dharma",
+					"pId": "Continue your journey|The Dilemma of Dharma",
+					"original": "[[Continue your journey|The Dilemma of Dharma]]"
+				}
+			],
+			"cleanText": "You share a parable of greed and consequence. The bandit, touched, sighs. \"Perhaps I have lost my way...\" He drops his sword and walks into the forest, a changed man.\n\n🕊 A kind word turned away wrath."
+		},
+		{
+			"name": "Duel",
+			"imageURL": "images/Samir/15.webp",
+			"passageId": "15",
+			"text": "You kill the man and save the villager's life\n\n[[You won, but at what cost?|The Dilemma of Dharma]]",
+			"links": [
+				{
+					"linkText": "You won, but at what cost?|The Dilemma of Dharma",
+					"pId": "You won, but at what cost?|The Dilemma of Dharma",
+					"original": "[[You won, but at what cost?|The Dilemma of Dharma]]"
+				}
+			],
+			"cleanText": "You kill the man and save the villager's life"
+		},
+		{
+			"name": " scene 7",
+			"imageURL": "images/Samir/16.webp",
+			"passageId": "16",
+			"text": "I... I...\n\n[[Continue|scene 8]]",
+			"links": [
+				{
+					"linkText": "Continue|scene 8",
+					"pId": "Continue|scene 8",
+					"original": "[[Continue|scene 8]]"
+				}
+			],
+			"cleanText": "I... I..."
+		},
+		{
+			"name": "scene 8",
+			"imageURL": "images/Samir/17.webp",
+			"passageId": "17",
+			"text": "The attacker catches up and finishes the job\n[[Go back|The Dilemma of Dharma]]",
+			"links": [
+				{
+					"linkText": "Go back|The Dilemma of Dharma",
+					"pId": "Go back|The Dilemma of Dharma",
+					"original": "[[Go back|The Dilemma of Dharma]]"
+				}
+			],
+			"cleanText": "The attacker catches up and finishes the job"
+		}
+	]
+}
