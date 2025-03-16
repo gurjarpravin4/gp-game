@@ -1,4 +1,4 @@
-<div class="w-full h-full flex flex-col items-center justify-center gap-4">
+<div class="w-svw h-full flex flex-col items-center justify-center gap-4">
 	<h2 class="choice-text">Gender: {{ gameState.gender() }}</h2>
 	<h2 class="choice-text">Character: {{ gameState.character() }}</h2>
 	<button
@@ -10,7 +10,12 @@
 	<p class="body-text">This button is just to reset (for testing purposes)</p>
 
 	<button
-		(click)="storyManager.goToPassage(storyManager.currentPassageId())"
+		(click)="
+			storyManager.goToPassage(
+				storyManager.currentPassageId(),
+				storyManager.karmaMeter()
+			)
+		"
 		class="choice-btn choice-text"
 	>
 		Open {{ gameState.character() }}'s story

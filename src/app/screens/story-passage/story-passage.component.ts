@@ -1,10 +1,11 @@
 import { Component, inject, signal } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { StoryControllerService } from "../../services/story-controller.service";
+import { NavbarComponent } from "../../components/navbar/navbar.component";
 
 @Component({
 	selector: "app-story-passage",
-	imports: [],
+	imports: [NavbarComponent],
 	templateUrl: "./story-passage.component.html",
 	styles: ``,
 })

@@ -1,0 +1,27 @@
+<div class="flex flex-col items-end">
+	<div
+		id="outerDiv"
+		class="w-full p-2 flex"
+	>
+		<div class="h-8 w-8 absolute z-10 ml-[-30px]">
+			<img
+				src="icons/karma-meter.svg"
+				alt="karma"
+			/>
+		</div>
+		<div
+			class="mx-auto w-60 border-4 border-[#CF8EFF] bg-linear-to-r from-red-500 to-green-500 rounded-full h-5 mt-2 z-0"
+		>
+			<div
+				class="border-r-4 rounded-l-full h-full border-[#Cf8EFF]"
+				[style.width.%]="storyManager.divWidthPercent()"
+				#dynamicWidth
+			></div>
+		</div>
+	</div>
+	<div class="p-1 bg-[#CF8EFF] rounded-md w-32">
+		<h3 class="body-text text-center">
+			Karma meter: {{ storyManager.karmaMeter() }}
+		</h3>
+	</div>
+</div>

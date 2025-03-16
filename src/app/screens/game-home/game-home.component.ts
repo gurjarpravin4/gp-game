@@ -21,6 +21,12 @@ export class GameHomeComponent {
 		this.storyManager.getStory(this.gameState.character());
 		// get the current passage
 		this.storyManager.getCurrentPassageId();
+		// get current karma points
+		this.storyManager.getKarmaMeter();
+		// get maxTotalKarma if it is undefined, set it to 100 by default
+		this.storyManager.maxTotalKarma.set(
+			this.storyManager.story()?.maxTotalKarma ?? 100
+		);
 	}
 
 	async clearData() {
@@ -29,5 +35,8 @@ export class GameHomeComponent {
 		await Preferences.remove({ key: Keys.currentPassageId });
 		this.gameState.gender.set(null);
 		this.gameState.character.set(null);
+		this.storyManager.setCurrentPassageId("1");
+		this.storyManager.setKarmaMeter(-this.storyManager.karmaMeter());
+		this.storyManager.divWidthPercent.set(50);
 	}
 }

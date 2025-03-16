@@ -1,21 +1,22 @@
 <div
-	class="w-full h-full bg-no-repeat bg-cover flex flex-col items-center justify-between"
+	class="w-svw h-full bg-no-repeat bg-cover flex flex-col items-center justify-between"
 	style="background-image: 
-    linear-gradient(rgba(135, 80, 156, 0.4), rgba(135, 80, 156, 0.4)),
-    url('{{ imgURL }}');"
+linear-gradient(rgba(135, 80, 156, 0.4), rgba(135, 80, 156, 0.4)),
+url('{{ imgURL }}');"
 >
+	<app-navbar />
 	<h3 class="heading-text text-center mt-[20px]">The Dharma Dilemma</h3>
 
 	<div
 		class="w-xs body-text overflow-visible border-2 border-neutral-1 rounded-xl p-2 bg-primary-2"
 	>
-		<p>{{ storyManager.currentPassage()?.cleanText }}</p>
+		<p>{{ storyManager.currentPassage()?.text }}</p>
 	</div>
 
 	<div class="flex flex-col gap-2">
 		@for (item of storyManager.currentPassage()?.links; track $index) {
 		<button
-			(click)="storyManager.goToPassage(item.pId)"
+			(click)="storyManager.goToPassage(item.pId, item.karmaPoints)"
 			class="choice-btn choice-text mb-2"
 		>
 			{{ item.linkText }}

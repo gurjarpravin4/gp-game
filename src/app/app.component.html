@@ -2,7 +2,9 @@
 	@if (!gameState.isLoaded()) {
 	<app-splash-screen />
 	} @else {
-	<router-outlet />
+	<div class="flex grow w-0">
+		<router-outlet />
+	</div>
 	}
 </div>
 
@@ -10,6 +12,6 @@
 	@import "tailwindcss";
 	@import "../styles.css";
 	.app-container {
-		@apply w-svw h-svh mx-auto min-h-screen bg-primary-1;
+		@apply w-svw h-svh flex flex-col justify-center mx-auto bg-primary-1;
 	}
 </style>

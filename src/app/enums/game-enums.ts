@@ -24,4 +24,5 @@ export enum Keys {
 	gender = "gender",
 	character = "character",
 	currentPassageId = "currentPassageId",
+	karmaMeter = "karmaMeter",
 }
