@@ -1,0 +1,14 @@
+<div
+	class="h-svh w-svw flex-col flex items-center justify-end p-8 gap-10 bg-contain bg-center bg-no-repeat"
+	[style.background-image]="'url(' + scene()?.imageURL + ')'"
+	[style.background-size]="'100% 100%'"
+>
+	@for (item of scene()?.links; track $index) {
+	<button
+		(click)="handleChoice(item)"
+		class="choice-btn"
+	>
+		{{ item.text }}
+	</button>
+	}
+</div>

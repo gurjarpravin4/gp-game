@@ -1,17 +1,15 @@
 <div
-	class="flex flex-col justify-evenly md:justify-center md:gap-16 items-center w-svw h-full"
+	class="flex flex-col justify-evenly md:justify-center md:gap-16 items-center w-svw h-svh grow"
 >
-	<div class="w-full choice-text px-10 mt-2 cursor-pointer">
-		<span
-			class="material-symbols-outlined"
+	<div class="w-full text-neutral-1 px-10 mt-2 cursor-pointer">
+		<fa-icon
 			(click)="navigateBack()"
-		>
-			arrow_back
-		</span>
+			[icon]="faArrowLeft"
+		/>
 	</div>
-	<h3 class="text-center heading-text">Select Your Character</h3>
+	<h3 class="text-center heading-text text-heading">Select Your Character</h3>
 
-	<div class="flex justify-evenly flex-wrap gap-5 max-w-[400px]">
+	<div class="flex justify-evenly flex-wrap gap-5 max-w-[400px] px-4">
 		@for (character of characters; track $index) {
 		<app-character-profile
 			[name]="character"

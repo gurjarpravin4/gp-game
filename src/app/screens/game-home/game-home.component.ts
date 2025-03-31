@@ -1,6 +1,6 @@
 import { Component, inject } from "@angular/core";
 import { Preferences } from "@capacitor/preferences";
-import { FemaleCharacter, Keys, MaleCharacter } from "../../enums/game-enums";
+import { Keys } from "../../enums/game-enums";
 import { GameStateService } from "../../services/game-state.service";
 import { Router } from "@angular/router";
 import { StoryControllerService } from "../../services/story-controller.service";
@@ -18,25 +18,22 @@ export class GameHomeComponent {
 
 	ngOnInit() {
 		// get the character's story
-		this.storyManager.getStory(this.gameState.character());
 		// get the current passage
-		this.storyManager.getCurrentPassageId();
+		this.storyManager.loadStory();
 		// get current karma points
-		this.storyManager.getKarmaMeter();
 		// get maxTotalKarma if it is undefined, set it to 100 by default
-		this.storyManager.maxTotalKarma.set(
-			this.storyManager.story()?.maxTotalKarma ?? 100
-		);
 	}
 
 	async clearData() {
+		// remove data from ionic storage
 		await Preferences.remove({ key: Keys.gender });
 		await Preferences.remove({ key: Keys.character });
-		await Preferences.remove({ key: Keys.currentPassageId });
-		this.gameState.gender.set(null);
-		this.gameState.character.set(null);
-		this.storyManager.setCurrentPassageId("1");
-		this.storyManager.setKarmaMeter(-this.storyManager.karmaMeter());
-		this.storyManager.divWidthPercent.set(50);
+		await Preferences.remove({ key: Keys.currentSceneId });
+		// set the project varaibles as undefined
+		this.gameState.gender.set(undefined);
+		this.gameState.character.set(undefined);
+		this.storyManager.currentSceneId.set(undefined);
+		// navigate to home
+		this.router.navigateByUrl("gender-select");
 	}
 }

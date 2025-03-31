@@ -1,0 +1,19 @@
+<div
+	class="h-svh w-svw flex-col flex items-center justify-end p-8 gap-10 bg-contain bg-center bg-no-repeat"
+	[style.background-image]="'url(' + scene()?.imageURL + ')'"
+	[style.background-size]="'100% 100%'"
+>
+	<div
+		class="w-[350px] bg-primary-1 consequence-text text-heading rounded-md p-1 text-center"
+	>
+		{{ scene()?.title }}
+	</div>
+	<div class="w-full flex justify-end">
+		<button
+			(click)="storyController.setCurrentSceneId(nextScene)"
+			class="material-symbols-outlined continue-btn"
+		>
+			{{scene()?.links?.[0]?.text}}
+		</button>
+	</div>
+</div>

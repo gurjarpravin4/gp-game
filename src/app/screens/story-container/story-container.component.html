@@ -1,0 +1,23 @@
+<div class="h-svh w-svw overflow-hidden flex flex-col">
+	<div class="fixed top-0 z-10 bg-blue-400 w-full">karma goes here</div>
+	<!-- If the current scene is not null then render the scene conditionally based on the screen type -->
+	@if (currentScene()) {
+	<!-- render stage-component -->
+	@if (currentScene()?.sceneType === "stage") {
+	<app-stage-component />
+	}
+	<!-- render normal component -->
+	@if (currentScene()?.sceneType === "normal") {
+	<app-normal-component />
+	}
+	<!-- render choice component -->
+	@if (currentScene()?.sceneType === "choice") {
+	<app-choice-component />
+	}
+	<!-- render consequence component -->
+	@if (currentScene()?.sceneType === "consequence") {
+	<app-consequence-component />
+	}
+	<!-- blank line -->
+	}
+</div>

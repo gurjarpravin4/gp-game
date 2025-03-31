@@ -2,19 +2,22 @@ export interface Story {
 	storyId: string;
 	name: string;
 	maxTotalKarma: number;
-	passages: Passage[];
+	scenes: Scene[];
 }
 
-export interface Passage {
-	name: string;
-	imageURL: string;
-	passageId: string;
+export interface Scene {
+	id: number;
+	sceneType: "stage" | "normal" | "choice" | "consequence";
+	imageURL?: string;
+	title?: string;
+	subtitle?: string;
+	karmaPoints?: number;
+	emotionalCore?: number;
 	links: Link[];
-	text: string;
 }
 
 export interface Link {
-	linkText: string;
-	pId: string;
+	text: string;
+	to: string;
 	karmaPoints: number;
 }

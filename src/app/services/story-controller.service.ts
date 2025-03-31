@@ -1,92 +1,98 @@
+import { effect, inject, Injectable, signal } from "@angular/core";
+import { Scene, Story } from "../interfaces/types";
 import { HttpClient } from "@angular/common/http";
-import { inject, Injectable, signal } from "@angular/core";
-import { Observable } from "rxjs";
-import { Passage, Story } from "../interfaces/types";
+import { GameStateService } from "./game-state.service";
 import { FemaleCharacter, Keys, MaleCharacter } from "../enums/game-enums";
 import { Preferences } from "@capacitor/preferences";
-import { Router } from "@angular/router";
 
 @Injectable({
 	providedIn: "root",
 })
 export class StoryControllerService {
-	constructor() {}
+	divWidthPercent() {
+		throw new Error("Method not implemented.");
+	}
 	http = inject(HttpClient);
-	router = inject(Router);
+	gameState = inject(GameStateService);
 
-	story = signal<Story | null>(null);
-	currentPassageId = signal<string | undefined>("");
-	currentPassage = signal<Passage | undefined>(undefined);
-	karmaMeter = signal<number>(0);
-	maxTotalKarma = signal<number>(0);
-	divWidthPercent = signal<number | undefined>(50);
+	story = signal<Story | undefined>(undefined);
+	character = signal<MaleCharacter | FemaleCharacter | undefined>(undefined);
+	currentSceneId = signal<number | undefined>(undefined);
+	currentScene = signal<Scene | undefined>(undefined);
+	karmaPoints = signal<number | undefined>(undefined);
+	maxKarmaPoints = 100;
 
-	calculateDivWidthPercent() {
-		const maxKarma = this.maxTotalKarma() ?? 100;
-		let newWidth = 50;
-		if (this.karmaMeter() != 0) newWidth += (this.karmaMeter() / maxKarma) * 50;
-
-		console.log(this.karmaMeter(), newWidth);
-		this.divWidthPercent.set(newWidth);
+	constructor() {
+		// load the character which is already saved in the game state service
+		this.character.set(this.gameState.character());
+		// load the character's story and the current scene
+		this.loadStory();
+		// Auto-update the scene when sceneId changes
+		effect(() => {
+			this.getCurrentScene();
+			console.log("called from effect");
+		});
 	}
 
-	async getCurrentPassageId() {
-		// try to fetch current passage id from capacitor
-		const pIdString = (await Preferences.get({ key: Keys.currentPassageId }))
-			.value;
-
-		// if not found set it to 1 by default
-		if (!pIdString) this.currentPassageId.set("1");
-		// if found update the signal
-		else this.currentPassageId.set(pIdString);
+	loadStory() {
+		this.http
+			.get<Story>(`stories/${this.character()}.json`)
+			.subscribe((data) => {
+				// set the story
+				this.story.set(data);
+				// get the current scene id
+				this.getCurrentSceneId();
+				// update maxKarmaPoints
+				this.maxKarmaPoints = data.maxTotalKarma;
+			});
 	}
 
-	async setCurrentPassageId(id: string) {
-		// update the signal
-		this.currentPassageId.set(id);
-		// update the capacitor storage
-		await Preferences.set({ key: Keys.currentPassageId, value: id });
+	// Functions to update capacitor storage
+	async setCurrentSceneId(id: number) {
+		// update capacitor storage
+		await Preferences.set({ key: Keys.currentSceneId, value: id.toString() });
+		// update signal value
+		this.currentSceneId.set(id);
 	}
 
-	async getKarmaMeter() {
-		// Fetch the karma meter from capacitor
-		let kString = (await Preferences.get({ key: Keys.karmaMeter })).value;
-		// typecast it back to number and update the signal variable
-		this.karmaMeter.set(Number(kString));
+	async getCurrentSceneId() {
+		// try to get it from capacitor storage
+		const id = (await Preferences.get({ key: Keys.currentSceneId })).value;
+		// update the signal value, need to typecast as it is saved in capacitor storage as a string
+		this.currentSceneId.set(Number(id) || 0);
+		console.log("scene id", this.currentSceneId());
 	}
 
-	async setKarmaMeter(karmaPoints: number) {
-		// update the signal
-		this.karmaMeter.update((oldKarma) => oldKarma + karmaPoints);
+	async setKarmaPoints(points: number) {
+		// calculate the new karma points by adding the newly passed value to the old karmaPoints value
+		const newKarma = (this.karmaPoints() ?? 0) + points;
+		// update signal value
+		this.karmaPoints.set(newKarma);
 		// update capacitor storage
 		await Preferences.set({
-			key: Keys.karmaMeter,
-			value: this.karmaMeter().toString(),
-		});
-
-		// calculate new div width based on updated karma
-		this.calculateDivWidthPercent();
-	}
-
-	goToPassage(id: string | undefined, karmaPoints: number) {
-		// update karma based on choice
-		this.setKarmaMeter(karmaPoints);
-		// if it is the last passage, navigate to the home page
-		if (id === "game-home") this.router.navigateByUrl("");
-		// else go to the next passage
-		else this.router.navigateByUrl(`story-passage/${id}`);
-	}
-
-	getStory(character: MaleCharacter | FemaleCharacter | null) {
-		this.http.get<Story>(`stories/${character}.json`).subscribe((data) => {
-			this.story.set(data);
-			console.log(this.story());
+			key: Keys.karmaPoints,
+			value: newKarma.toString(),
 		});
 	}
 
-	getCurrentPassage(id: string) {
-		this.currentPassage.set(
-			this.story()?.passages.find((p) => p.passageId === id)
+	async getKarmaPoints() {
+		// fetch karma points from ionic storage
+		const points = Number(
+			(await Preferences.get({ key: Keys.karmaPoints })).value
 		);
+		// update signal value
+		this.karmaPoints.set(points || 0);
+		console.log("Karma points");
+	}
+
+	// function to get the current scene
+	getCurrentScene() {
+		// find the current scene from the story scenes array
+		const scene = this.story()?.scenes.find(
+			(s) => s.id === this.currentSceneId()
+		);
+		// update the signal
+		this.currentScene.set(scene);
+		console.log("current scene", this.currentScene());
 	}
 }

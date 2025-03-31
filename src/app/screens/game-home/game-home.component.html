@@ -10,12 +10,7 @@
 	<p class="body-text">This button is just to reset (for testing purposes)</p>
 
 	<button
-		(click)="
-			storyManager.goToPassage(
-				storyManager.currentPassageId(),
-				storyManager.karmaMeter()
-			)
-		"
+		(click)="router.navigateByUrl('story-container')"
 		class="choice-btn choice-text"
 	>
 		Open {{ gameState.character() }}'s story

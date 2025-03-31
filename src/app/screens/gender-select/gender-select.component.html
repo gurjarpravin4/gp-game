@@ -1,15 +1,17 @@
-<div class="h-full w-svw flex flex-col items-center justify-evenly">
+<div class="h-svh w-svw flex flex-col items-center justify-evenly">
 	<h1 class="title-text text-center">
-		{{ gameState.titleLine1 }} <br />
-		{{ gameState.titleLine2 }}
+		{{ gameState.title }}
 	</h1>
 
-	<div class="text-center heading-text w-[250px] overflow-visible">
-		Welcome to the city of Vrittapuram!
+	<div
+		class="text-center heading-text text-heading w-full px-1 overflow-visible"
+	>
+		Welcome to the city of <br />
+		Vrittapuram!
 	</div>
 
 	<div class="flex flex-col gap-8">
-		<h3 class="text-center choice-text">Select Gender</h3>
+		<h3 class="text-center choice-text text-neutral-1">Select Gender</h3>
 		@for (gender of genders; track $index) {
 		<button
 			(click)="selectGender(gender)"

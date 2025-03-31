@@ -1,11 +1,11 @@
 {
 	"storyId": "1",
-	"name": "Dilemma of Dharma JSON",
+	"name": "Dilemma of Dharma",
 	"maxTotalKarma": 65,
 	"passages": [
 		{
 			"name": "Untitled Passage",
-			"imageURL": "images/Samir/1.webp",
+			"imageURL": "images/Samir/Samir_1.webp",
 			"passageId": "1",
 			"links": [
 				{
@@ -18,7 +18,7 @@
 		},
 		{
 			"name": "scene 2",
-			"imageURL": "images/Samir/2.webp",
+			"imageURL": "images/Samir/Samir_2.webp",
 			"passageId": "2",
 			"links": [
 				{
@@ -31,7 +31,7 @@
 		},
 		{
 			"name": "choice-1",
-			"imageURL": "images/Samir/3.webp",
+			"imageURL": "images/Samir/Samir_3.webp",
 			"passageId": "3",
 			"links": [
 				{
@@ -54,7 +54,7 @@
 		},
 		{
 			"name": "Hide",
-			"imageURL": "images/Samir/4.webp",
+			"imageURL": "images/Samir/Samir_4.webp",
 			"passageId": "4",
 			"links": [
 				{
@@ -72,7 +72,7 @@
 		},
 		{
 			"name": "Confront",
-			"imageURL": "images/Samir/5.webp",
+			"imageURL": "images/Samir/Samir_5.webp",
 			"passageId": "5",
 			"links": [
 				{
@@ -90,7 +90,7 @@
 		},
 		{
 			"name": "Question",
-			"imageURL": "images/Samir/6.webp",
+			"imageURL": "images/Samir/Samir_6.webp",
 			"passageId": "6",
 			"links": [
 				{
@@ -103,7 +103,7 @@
 		},
 		{
 			"name": "Lie",
-			"imageURL": "images/Samir/7.webp",
+			"imageURL": "images/Samir/Samir_7.webp",
 			"passageId": "7",
 			"links": [
 				{
@@ -116,7 +116,7 @@
 		},
 		{
 			"name": "Truth",
-			"imageURL": "images/Samir/8.webp",
+			"imageURL": "images/Samir/Samir_8.webp",
 			"passageId": "8",
 			"links": [
 				{
@@ -129,7 +129,7 @@
 		},
 		{
 			"name": " scene 3",
-			"imageURL": "images/Samir/9.webp",
+			"imageURL": "images/Samir/Samir_9.webp",
 			"passageId": "9",
 			"links": [
 				{
@@ -142,7 +142,7 @@
 		},
 		{
 			"name": " scene 4",
-			"imageURL": "images/Samir/10.webp",
+			"imageURL": "images/Samir/Samir_10.webp",
 			"passageId": "10",
 			"links": [
 				{
@@ -155,7 +155,7 @@
 		},
 		{
 			"name": "The Dilemma of Dharma",
-			"imageURL": "images/Samir/11.webp",
+			"imageURL": "images/Samir/Samir_11.webp",
 			"passageId": "11",
 			"links": [
 				{
@@ -168,7 +168,7 @@
 		},
 		{
 			"name": " scene 5",
-			"imageURL": "images/Samir/12.webp",
+			"imageURL": "images/Samir/Samir_12.webp",
 			"passageId": "12",
 			"links": [
 				{
@@ -181,7 +181,7 @@
 		},
 		{
 			"name": " scene 6",
-			"imageURL": "images/Samir/13.webp",
+			"imageURL": "images/Samir/Samir_13.webp",
 			"passageId": "13",
 			"links": [
 				{
@@ -194,7 +194,7 @@
 		},
 		{
 			"name": "Wisdom",
-			"imageURL": "images/Samir/14.webp",
+			"imageURL": "images/Samir/Samir_14.webp",
 			"passageId": "14",
 			"links": [
 				{
@@ -207,7 +207,7 @@
 		},
 		{
 			"name": "Duel",
-			"imageURL": "images/Samir/15.webp",
+			"imageURL": "images/Samir/Samir_15.webp",
 			"passageId": "15",
 			"links": [
 				{
@@ -220,7 +220,7 @@
 		},
 		{
 			"name": " scene 7",
-			"imageURL": "images/Samir/16.webp",
+			"imageURL": "images/Samir/Samir_16.webp",
 			"passageId": "16",
 			"links": [
 				{
@@ -233,7 +233,7 @@
 		},
 		{
 			"name": "scene 8",
-			"imageURL": "images/Samir/17.webp",
+			"imageURL": "images/Samir/Samir_17.webp",
 			"passageId": "17",
 			"links": [
 				{

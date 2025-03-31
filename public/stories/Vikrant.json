@@ -1,0 +1,846 @@
+{
+	"storyId": 1,
+	"name": "Dilemma of Dharma",
+	"maxTotalKarma": 65,
+	"scenes": [
+		{
+			"id": 0,
+			"sceneType": "stage",
+			"imageURL": "#",
+			"title": "Welcome to Stage 1: The Awakening",
+			"subtitle": "There are no easy answers now—will you embrace the consequences of your past or rewrite your fate? In a world of shifting truths, only you can define what is just.The final choice is upon you!",
+			"links": [{ "text": "chevron_right", "to": 1, "karmaPoints": 0 }]
+		},
+		{
+			"id": 1,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_1.webp",
+			"title": "Welcome to Stage 1: The Awakening",
+			"subtitle": "There are no easy answers now—will you embrace the consequences of your past or rewrite your fate? In a world of shifting truths, only you can define what is just.The final choice is upon you!",
+			"links": [{ "text": "chevron_right", "to": 2, "karmaPoints": 0 }]
+		},
+		{
+			"id": 2,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_2.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 3, "karmaPoints": 0 }]
+		},
+		{
+			"id": 3,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_3.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 4, "karmaPoints": 0 }]
+		},
+		{
+			"id": 4,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_4.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 5, "karmaPoints": 0 }]
+		},
+		{
+			"id": 5,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_5.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 6, "karmaPoints": 0 }]
+		},
+		{
+			"id": 6,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_6.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 7, "karmaPoints": 0 }]
+		},
+		{
+			"id": 7,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_7.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 8, "karmaPoints": 0 }]
+		},
+		{
+			"id": 8,
+			"sceneType": "choice",
+			"imageURL": "images/Vikrant/Vikrant_8.webp",
+			"title": "What will you choose?",
+			"subtitle": "Does he correct Mr. Khanna and give Akash due credit? OR Does he seize the opportunity, knowing Akash is too reserved to challenge him?",
+			"links": [
+				{
+					"text": "Take Credit and gain success",
+					"to": 9,
+					"karmaPoints": -5
+				},
+				{
+					"text": "Stay honest, but slow your growth",
+					"to": 16,
+					"karmaPoints": 5
+				}
+			]
+		},
+		{
+			"id": 9,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_9.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 10, "karmaPoints": 0 }]
+		},
+		{
+			"id": 10,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_10.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 11, "karmaPoints": 0 }]
+		},
+		{
+			"id": 11,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_11.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 12, "karmaPoints": 0 }]
+		},
+		{
+			"id": 12,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_12.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 13, "karmaPoints": 0 }]
+		},
+		{
+			"id": 13,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_13.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 14, "karmaPoints": 0 }]
+		},
+		{
+			"id": 14,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_14.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 15, "karmaPoints": 0 }]
+		},
+		{
+			"id": 15,
+			"sceneType": "consequence",
+			"imageURL": "images/Vikrant/Vikrant_15.webp",
+			"title": "Career boost but lost respect; Future challenges will be lonlier as others stop offering support",
+			"subtitle": "Fire burns brighter but at the cost of trust",
+			"links": [{ "text": "chevron_right", "to": 24, "karmaPoints": 0 }]
+		},
+		{
+			"id": 16,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_16.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 17, "karmaPoints": 0 }]
+		},
+		{
+			"id": 17,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_17.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 18, "karmaPoints": 0 }]
+		},
+		{
+			"id": 18,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_18.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 19, "karmaPoints": 0 }]
+		},
+		{
+			"id": 19,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_19.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 20, "karmaPoints": 0 }]
+		},
+		{
+			"id": 20,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_20.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 21, "karmaPoints": 0 }]
+		},
+		{
+			"id": 21,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_21.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 22, "karmaPoints": 0 }]
+		},
+		{
+			"id": 22,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_22.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 23, "karmaPoints": 0 }]
+		},
+		{
+			"id": 23,
+			"sceneType": "consequence",
+			"imageURL": "images/Vikrant/Vikrant_23.webp",
+			"title": "Stronger alliances; Future opportunities will have more people supporting",
+			"subtitle": "Fire learns to temper ambition with honour",
+			"links": [{ "text": "chevron_right", "to": 24, "karmaPoints": 0 }]
+		},
+		{
+			"id": 24,
+			"sceneType": "stage",
+			"imageURL": "#",
+			"title": "Welcome to Stage 2: The Moral Junction",
+			"subtitle": "The lines between right and wrong begin to blur—will you stand by your beliefs or adapt to survive? Every decision deepens your karma and tests your resolve. The weight of your choices grows heavier!",
+			"links": [{ "text": "chevron_right", "to": 25, "karmaPoints": 0 }]
+		},
+		{
+			"id": 25,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_25.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 26, "karmaPoints": 0 }]
+		},
+		{
+			"id": 26,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_26.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 27, "karmaPoints": 0 }]
+		},
+		{
+			"id": 27,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_27.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 28, "karmaPoints": 0 }]
+		},
+		{
+			"id": 28,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_28.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 29, "karmaPoints": 0 }]
+		},
+		{
+			"id": 29,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_29.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 30, "karmaPoints": 0 }]
+		},
+		{
+			"id": 30,
+			"sceneType": "choice",
+			"imageURL": "images/Vikrant/Vikrant_30.webp",
+			"title": "What will you choose?",
+			"subtitle": "Will you stay loyal towards your friends and colleagues OR will you choose your bosses? OR ...Can a middle ground be found?",
+			"links": [
+				{
+					"text": "Fire Anchal and secure your career",
+					"to": 31,
+					"karmaPoints": 10
+				},
+				{
+					"text": "Privately inform Anchal and the team",
+					"to": 34,
+					"karmaPoints": 5
+				},
+				{
+					"text": "Privately inform Anchal and the team",
+					"to": 37,
+					"karmaPoints": -5
+				}
+			]
+		},
+		{
+			"id": 31,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_31.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 32, "karmaPoints": 0 }]
+		},
+		{
+			"id": 32,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_31.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 33, "karmaPoints": 0 }]
+		},
+		{
+			"id": 33,
+			"sceneType": "consequence",
+			"imageURL": "images/Vikrant/Vikrant_33.webp",
+			"title": "Your bosses applaud you for being \"decisive.\" However, your other colleagues start getting distant many of whom fear and resent you.",
+			"subtitle": "You climb the ladder of success but there is no one to support you and you feel a void.",
+			"karmaPoints": -5,
+			"emotionalCore": 10,
+			"links": [{ "text": "chevron_right", "to": 40, "karmaPoints": 0 }]
+		},
+		{
+			"id": 34,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_34.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 35, "karmaPoints": 0 }]
+		},
+		{
+			"id": 35,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_35.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 36, "karmaPoints": 0 }]
+		},
+		{
+			"id": 36,
+			"sceneType": "consequence",
+			"imageURL": "images/Vikrant/Vikrant_36.webp",
+			"title": "You face mixed reactions, straining your bond with Anchal. Pressure mounts, but a shift in your favor looms.",
+			"subtitle": "Guilt lingers, although you know that you tried. You walk a fragile balance.",
+			"karmaPoints": 5,
+			"emotionalCore": 5,
+			"links": [{ "text": "chevron_right", "to": 58, "karmaPoints": 0 }]
+		},
+		{
+			"id": 37,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_37.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 38, "karmaPoints": 0 }]
+		},
+		{
+			"id": 38,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_38.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 39, "karmaPoints": 0 }]
+		},
+		{
+			"id": 39,
+			"sceneType": "consequence",
+			"imageURL": "images/Vikrant/Vikrant_39.webp",
+			"title": "You keep your integrity, but at the cost of your career growth",
+			"subtitle": "You feel morally fulfilled yet tense, aware of your fading corporate standing.",
+			"karmaPoints": 10,
+			"emotionalCore": -5,
+			"links": [{ "text": "chevron_right", "to": 76, "karmaPoints": 0 }]
+		},
+		{
+			"id": 40,
+			"sceneType": "stage",
+			"imageURL": "#",
+			"title": "Welcome to Stage 3: The Final Trial",
+			"subtitle": "There are no easy answers now—will you embrace the consequences of your past or rewrite your fate? In a world of shifting truths, only you can define what is just.The final choice is upon you!",
+			"links": [{ "text": "chevron_right", "to": 41, "karmaPoints": 0 }]
+		},
+		{
+			"id": 41,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_41.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 42, "karmaPoints": 0 }]
+		},
+		{
+			"id": 42,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_42.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 43, "karmaPoints": 0 }]
+		},
+		{
+			"id": 43,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_43.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 44, "karmaPoints": 0 }]
+		},
+		{
+			"id": 44,
+			"sceneType": "choice",
+			"imageURL": "images/Vikrant/Vikrant_44.webp",
+			"title": "What will you choose?",
+			"subtitle": "Will you shield your company with lies, or expose its truth and bear the cost? OR ... Can a middle ground be found?",
+			"links": [
+				{
+					"text": "Protect the company",
+					"to": 45,
+					"karmaPoints": -5
+				},
+				{
+					"text": "Play it smart... Negotiate",
+					"to": 50,
+					"karmaPoints": 5
+				},
+				{
+					"text": "Expose them & risk your career",
+					"to": 54,
+					"karmaPoints": 10
+				}
+			]
+		},
+		{
+			"id": 45,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_45.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 46, "karmaPoints": 0 }]
+		},
+		{
+			"id": 46,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_46.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 47, "karmaPoints": 0 }]
+		},
+		{
+			"id": 47,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_47.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 48, "karmaPoints": 0 }]
+		},
+		{
+			"id": 48,
+			"sceneType": "consequence",
+			"imageURL": "images/Vikrant/Vikrant_48.webp",
+			"title": "Your reputation suffers, and emotional detachment deepens, making future betrayals easier.",
+			"subtitle": "Your ambition burns bright, but the flames consume your integrity and trust turns to ash",
+			"karmaPoints": -5,
+			"emotionalCore": 10,
+			"links": [{ "text": "chevron_right", "to": 49, "karmaPoints": 0 }]
+		},
+		{
+			"id": 49,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_49.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 49, "karmaPoints": 0 }]
+		},
+		{
+			"id": 50,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_50.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 51, "karmaPoints": 0 }]
+		},
+		{
+			"id": 51,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_51.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 52, "karmaPoints": 0 }]
+		},
+		{
+			"id": 52,
+			"sceneType": "consequence",
+			"imageURL": "images/Vikrant/Vikrant_52.webp",
+			"title": "Your integrity is retained but you are now seen as an unimportant asset within the system.",
+			"subtitle": "Your ambition flickers—compromised, yet powerless.",
+			"karmaPoints": 10,
+			"emotionalCore": -5,
+			"links": [{ "text": "chevron_right", "to": 53, "karmaPoints": 0 }]
+		},
+		{
+			"id": 53,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_53.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 0, "karmaPoints": 0 }]
+		},
+		{
+			"id": 54,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_54.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 55, "karmaPoints": 0 }]
+		},
+		{
+			"id": 55,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_55.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 56, "karmaPoints": 0 }]
+		},
+		{
+			"id": 56,
+			"sceneType": "consequence",
+			"imageURL": "images/Vikrant/Vikrant_56.webp",
+			"title": "Gaurav ruins Vikrant’s reputation, but he earns respect and a fresh start.",
+			"subtitle": "His fire of righteousness burns his career, but lights a new path of integrity.",
+			"links": [{ "text": "chevron_right", "to": 57, "karmaPoints": 0 }]
+		},
+		{
+			"id": 57,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_57.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 0, "karmaPoints": 0 }]
+		},
+		{
+			"id": 58,
+			"sceneType": "stage",
+			"imageURL": "#",
+			"title": "Welcome to Stage 3: The Final Trial",
+			"subtitle": "There are no easy answers now—will you embrace the consequences of your past or rewrite your fate? In a world of shifting truths, only you can define what is just.The final choice is upon you!",
+			"links": [{ "text": "chevron_right", "to": 59, "karmaPoints": 0 }]
+		},
+		{
+			"id": 59,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_59.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 60, "karmaPoints": 0 }]
+		},
+		{
+			"id": 60,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_60.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 61, "karmaPoints": 0 }]
+		},
+		{
+			"id": 61,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_61.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 62, "karmaPoints": 0 }]
+		},
+		{
+			"id": 62,
+			"sceneType": "choice",
+			"imageURL": "images/Vikrant/Vikrant_62.webp",
+			"title": "What will you choose?",
+			"subtitle": "Will you silence Aman and bury the truth, OR set it free and risk it all? OR ... Can a legal loophole be found?",
+			"links": [
+				{
+					"text": "Silence Aman and bury the truth",
+					"to": 63,
+					"karmaPoints": 0
+				},
+				{
+					"text": "Find a legal loophole",
+					"to": 67,
+					"karmaPoints": 0
+				},
+				{
+					"text": "Let the story go public",
+					"to": 72,
+					"karmaPoints": 0
+				}
+			]
+		},
+		{
+			"id": 63,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_63.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 64, "karmaPoints": 0 }]
+		},
+		{
+			"id": 64,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_64.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 65, "karmaPoints": 0 }]
+		},
+		{
+			"id": 65,
+			"sceneType": "consequence",
+			"imageURL": "images/Vikrant/Vikrant_65.webp",
+			"title": "Your career is stabilized but your personal relationships are hampered fuelling your detachment and trust.",
+			"subtitle": "Your ambition burns away trust, leaving only ashes of guilt.",
+			"karmaPoints": -5,
+			"emotionalCore": 10,
+			"links": [{ "text": "chevron_right", "to": 66, "karmaPoints": 0 }]
+		},
+		{
+			"id": 66,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_66.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 0, "karmaPoints": 0 }]
+		},
+		{
+			"id": 67,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_67.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 68, "karmaPoints": 0 }]
+		},
+		{
+			"id": 68,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_68.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 69, "karmaPoints": 0 }]
+		},
+		{
+			"id": 69,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_69.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 70, "karmaPoints": 0 }]
+		},
+		{
+			"id": 70,
+			"sceneType": "consequence",
+			"imageURL": "images/Vikrant/Vikrant_70.webp",
+			"title": "You earn respect from peers but lose favour with leadership, leaving your future in limbo.",
+			"subtitle": "Your fire flickers—visible but restrained",
+			"karmaPoints": 5,
+			"emotionalCore": 5,
+			"links": [{ "text": "chevron_right", "to": 71, "karmaPoints": 0 }]
+		},
+		{
+			"id": 71,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_71.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 0, "karmaPoints": 0 }]
+		},
+		{
+			"id": 72,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_72.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 73, "karmaPoints": 0 }]
+		},
+		{
+			"id": 73,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_73.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 74, "karmaPoints": 0 }]
+		},
+		{
+			"id": 74,
+			"sceneType": "consequence",
+			"imageURL": "images/Vikrant/Vikrant_74.webp",
+			"title": "You lose corporate power but gain a newfound purpose, earning public respect and personal redemption.",
+			"subtitle": "Your fire shifts from ambition to justice, reigniting your purpose.",
+			"karmaPoints": 10,
+			"emotionalCore": -5,
+			"links": [{ "text": "chevron_right", "to": 75, "karmaPoints": 0 }]
+		},
+		{
+			"id": 75,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_75.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 0, "karmaPoints": 0 }]
+		},
+		{
+			"id": 76,
+			"sceneType": "stage",
+			"imageURL": "#",
+			"title": "Welcome to Stage 3: The Final Trial",
+			"subtitle": "There are no easy answers now—will you embrace the consequences of your past or rewrite your fate? In a world of shifting truths, only you can define what is just.The final choice is upon you!",
+			"links": [{ "text": "chevron_right", "to": 77, "karmaPoints": 0 }]
+		},
+		{
+			"id": 77,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_77.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 78, "karmaPoints": 0 }]
+		},
+		{
+			"id": 78,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_78.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 79, "karmaPoints": 0 }]
+		},
+		{
+			"id": 79,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_79.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 80, "karmaPoints": 0 }]
+		},
+		{
+			"id": 80,
+			"sceneType": "choice",
+			"imageURL": "images/Vikrant/Vikrant_80.webp",
+			"title": "What will you choose?",
+			"subtitle": "Will you seize the offer and betray your soul, or walk away and start anew? OR ... can you thread the needle, stay without losing yourself?",
+			"links": [
+				{
+					"text": "Rejoin the Corporate world",
+					"to": 81,
+					"karmaPoints": -5
+				},
+				{
+					"text": "Take the job on your own terms",
+					"to": 85,
+					"karmaPoints": 5
+				},
+				{
+					"text": "Reject and start anew",
+					"to": 89,
+					"karmaPoints": 10
+				}
+			]
+		},
+		{
+			"id": 81,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_81.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 82, "karmaPoints": 0 }]
+		},
+		{
+			"id": 82,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_82.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 83, "karmaPoints": 0 }]
+		},
+		{
+			"id": 83,
+			"sceneType": "consequence",
+			"imageURL": "images/Vikrant/Vikrant_83.webp",
+			"title": "You regain stability but fall back into the cycle you tried to escape.",
+			"subtitle": "Your fire fades, survival outweighing conviction.",
+			"karmaPoints": -5,
+			"emotionalCore": 10,
+			"links": [{ "text": "chevron_right", "to": 84, "karmaPoints": 0 }]
+		},
+		{
+			"id": 84,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_84.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 0, "karmaPoints": 0 }]
+		},
+		{
+			"id": 85,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_85.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 86, "karmaPoints": 0 }]
+		},
+		{
+			"id": 86,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_86.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 87, "karmaPoints": 0 }]
+		},
+		{
+			"id": 87,
+			"sceneType": "consequence",
+			"imageURL": "images/Vikrant/Vikrant_87.webp",
+			"title": "You keep your job with integrity but lose influence, forced into subtle compromises.",
+			"subtitle": "Your fire weakens, restrained by compromise.",
+			"karmaPoints": 5,
+			"emotionalCore": 5,
+			"links": [{ "text": "chevron_right", "to": 88, "karmaPoints": 0 }]
+		},
+		{
+			"id": 88,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_88.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 0, "karmaPoints": 0 }]
+		},
+		{
+			"id": 89,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_89.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 90, "karmaPoints": 0 }]
+		},
+		{
+			"id": 90,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_90.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 91, "karmaPoints": 0 }]
+		},
+		{
+			"id": 91,
+			"sceneType": "consequence",
+			"imageURL": "images/Vikrant/Vikrant_91.webp",
+			"title": "You face uncertainty and financial struggle, but for the first time, you feel truly free and in control of your path.",
+			"subtitle": "Your fire burns with clarity, risking instability",
+			"links": [{ "text": "chevron_right", "to": 92, "karmaPoints": 0 }]
+		},
+		{
+			"id": 92,
+			"sceneType": "normal",
+			"imageURL": "images/Vikrant/Vikrant_92.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 0, "karmaPoints": 0 }]
+		}
+	]
+}

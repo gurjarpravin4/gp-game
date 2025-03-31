@@ -8,32 +8,61 @@
     font-weight: 700;
 }
 
+@font-face {
+    font-family: Petita;
+    src: url('/fonts/petita/PetitaBold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Petita;
+    src: url('/fonts/petita/PetitaLight.ttf') format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Petita;
+    src: url('/fonts/petita/PetitaMedium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Solitas;
+    src: url('/fonts/solitasserifnormregular.otf') format('opentype');
+    font-weight: 400;
+}
+
 /* Theme for the game */
 @theme {
     /* Colors */
-    --color-primary-1: #4B0082;
-    --color-primary-2: #EFA74E;
-    --color-neutral-1: #F2F2F7;
-    --color-neutral-2: #1B1B1B;
+    --color-primary-1: #2f0446;
+    --color-primary-2: #d7ac04;
+    --color-heading: #3bffe2;
+    --color-neutral-1: #e2e1e3;
+    --color-neutral-2: #F2F2F7;
     /* Fonts */
-    --font-heading: Tungsten, sans-serif;
+    --font-heading: Solitas, sans-serif;
     --font-title: Amarante, sans-serif;
-    --font-body: Hind Madurai, sans-serif;
+    --font-body: Petita, sans-serif;
 }
 
 
 /* Custom Directives */
 /* Typography */
 .body-text {
-    @apply font-body text-neutral-1 font-normal text-[16px]
+    @apply font-body text-neutral-1 font-medium text-[16px]
+}
+
+.consequence-text {
+    @apply font-body text-heading font-medium text-[16px]
 }
 
 .choice-text {
-    @apply font-body text-neutral-1 font-medium text-[28px] leading-[36px]
+    @apply font-body font-medium text-[28px] leading-[36px]
 }
 
 .heading-text {
-    @apply font-heading text-primary-2 font-normal text-4xl leading-[44px] tracking-[0.03em]
+    @apply font-heading font-normal text-4xl leading-[44px] tracking-[0.03em]
 }
 
 .title-text {
@@ -43,5 +72,42 @@
 
 /* Buttons */
 .choice-btn {
-    @apply w-[353px] h-[60px] px-[18px] py-[16px] bg-primary-2 rounded-xl cursor-pointer
+    @apply w-[353px] h-[60px] px-[18px] py-[16px] bg-linear-to-r from-[#FFEFB3] via-[#EFBF04] to-[#A78603] border-[3px] border-[#FFDF75C9] shadow-2xl shadow-[#F2BE10A8] text-primary-1 rounded-xl cursor-pointer font-bold
+}
+
+.continue-btn {
+    @apply w-9 h-8 bg-linear-to-r from-[#F8DB6B] via-[#EFBF04] to-[#A78603] rounded-lg border-[3px] border-[#FFDF75C9] shadow-2xl text-primary-1
+}
+
+/* from-[#FFEFB3] */
+
+
+@font-face {
+    font-family: 'Material Symbols Outlined';
+    font-style: normal;
+    font-weight: 100 700;
+    src: url(https://fonts.gstatic.com/icon/font?kit=kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsL7DLI5fGnvot4wWsgTgSE7ag&skey=b8dc2088854b122f&v=v232) format('woff2');
+}
+
+@font-face {
+    font-family: 'Material Symbols Outlined';
+    font-style: normal;
+    font-weight: 100 700;
+    src: url(https://fonts.gstatic.com/icon/font?kit=kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsL7D7I7e23spMIoQrklgb0hWRPv8A&skey=b8dc2088854b122f&v=v232) format('woff2');
+}
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
 }

@@ -11,12 +11,11 @@ import { Preferences } from "@capacitor/preferences";
 	providedIn: "root",
 })
 export class GameStateService {
-	readonly titleLine1 = "Yuga".toUpperCase();
-	readonly titleLine2 = "Chronicles".toUpperCase();
-	readonly subtitle = "Weaving life through choices";
-	isLoaded = signal<boolean | null>(false);
-	gender = signal<Gender | null>(null);
-	character = signal<MaleCharacter | FemaleCharacter | null>(null);
+	readonly title = "KarmaQuest";
+	readonly subtitle = "The game of consequences";
+	isLoaded = signal<boolean | undefined>(false);
+	gender = signal<Gender | undefined>(undefined);
+	character = signal<MaleCharacter | FemaleCharacter | undefined>(undefined);
 
 	async setIsLoaded(value: boolean) {
 		this.isLoaded.set(value);
@@ -44,19 +43,19 @@ export class GameStateService {
 		// parse a string to an enum
 		if (genderString && Object.values(Gender).includes(genderString as Gender))
 			this.gender.set(genderString as Gender);
-		else this.gender.set(null);
+		else this.gender.set(undefined);
 	}
 
 	async removeGender() {
 		await Preferences.remove({ key: Keys.gender });
-		this.gender.set(null);
+		this.gender.set(undefined);
 	}
 
 	async getCharacter() {
 		const chString = (await Preferences.get({ key: Keys.character })).value;
 		console.log("Character", chString);
 		if (!chString) {
-			this.character.set(null);
+			this.character.set(undefined);
 			return;
 		}
 		await this.getGender();
@@ -70,6 +69,6 @@ export class GameStateService {
 			Object.values(FemaleCharacter).includes(chString as FemaleCharacter)
 		)
 			this.character.set(chString as FemaleCharacter);
-		else this.character.set(null);
+		else this.character.set(undefined);
 	}
 }

@@ -3,10 +3,12 @@ import { GameStateService } from "../../services/game-state.service";
 import { Router } from "@angular/router";
 import { FemaleCharacter, Gender, MaleCharacter } from "../../enums/game-enums";
 import { CharacterProfileComponent } from "../../components/character-profile/character-profile.component";
+import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
 	selector: "app-character-select",
-	imports: [CharacterProfileComponent],
+	imports: [CharacterProfileComponent, FontAwesomeModule],
 	templateUrl: "./character-select.component.html",
 	styles: ``,
 })
@@ -14,6 +16,7 @@ export class CharacterSelectComponent {
 	gameState = inject(GameStateService);
 	router = inject(Router);
 	characters!: MaleCharacter[] | FemaleCharacter[];
+	faArrowLeft = faArrowLeft;
 
 	ngOnInit() {
 		this.gameState.getGender();
