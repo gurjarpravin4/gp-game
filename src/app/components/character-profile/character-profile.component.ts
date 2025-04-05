@@ -5,13 +5,16 @@ import { FemaleCharacter, MaleCharacter } from "../../enums/game-enums";
 	selector: "app-character-profile",
 	imports: [],
 	templateUrl: "./character-profile.component.html",
-	styles: ``,
+	styleUrl: "./character-profile.component.css",
 })
 export class CharacterProfileComponent {
 	imgUrl = signal("");
 
 	@Input({ required: true })
 	name!: MaleCharacter | FemaleCharacter;
+
+	@Input({ required: true })
+	shadowColor!: string;
 
 	@Output()
 	selected = new EventEmitter<MaleCharacter | FemaleCharacter>();

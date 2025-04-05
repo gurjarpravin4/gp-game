@@ -1,5 +1,5 @@
 import { effect, inject, Injectable, signal } from "@angular/core";
-import { Scene, Story } from "../interfaces/types";
+import { Element, Scene, Story } from "../interfaces/types";
 import { HttpClient } from "@angular/common/http";
 import { GameStateService } from "./game-state.service";
 import { FemaleCharacter, Keys, MaleCharacter } from "../enums/game-enums";
@@ -17,6 +17,7 @@ export class StoryControllerService {
 
 	story = signal<Story | undefined>(undefined);
 	character = signal<MaleCharacter | FemaleCharacter | undefined>(undefined);
+	element = signal<Element | undefined>(undefined);
 	currentSceneId = signal<number | undefined>(undefined);
 	currentScene = signal<Scene | undefined>(undefined);
 	karmaPoints = signal<number | undefined>(undefined);
@@ -42,6 +43,8 @@ export class StoryControllerService {
 				this.story.set(data);
 				// get the current scene id
 				this.getCurrentSceneId();
+				// get karma points
+				this.getKarmaPoints();
 				// update maxKarmaPoints
 				this.maxKarmaPoints = data.maxTotalKarma;
 			});
@@ -49,10 +52,13 @@ export class StoryControllerService {
 
 	// Functions to update capacitor storage
 	async setCurrentSceneId(id: number) {
+		// add the karma points to total karma
+		this.setKarmaPoints(this.currentScene()?.karmaPoints ?? 0);
 		// update capacitor storage
 		await Preferences.set({ key: Keys.currentSceneId, value: id.toString() });
 		// update signal value
 		this.currentSceneId.set(id);
+		// update karma points
 	}
 
 	async getCurrentSceneId() {

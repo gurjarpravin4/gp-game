@@ -2,6 +2,7 @@
 	"storyId": 1,
 	"name": "Dilemma of Dharma",
 	"maxTotalKarma": 65,
+	"element": "fire",
 	"scenes": [
 		{
 			"id": 0,
@@ -140,6 +141,8 @@
 			"imageURL": "images/Vikrant/Vikrant_15.webp",
 			"title": "Career boost but lost respect; Future challenges will be lonlier as others stop offering support",
 			"subtitle": "Fire burns brighter but at the cost of trust",
+			"karmaPoints": -5,
+			"emotionalCore": 5,
 			"links": [{ "text": "chevron_right", "to": 24, "karmaPoints": 0 }]
 		},
 		{

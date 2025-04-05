@@ -1,20 +1,38 @@
 <div
-	class="flex flex-col justify-evenly md:justify-center md:gap-16 items-center w-svw h-svh grow"
+	class="flex flex-col justify-center py-2 gap-[5%] md:justify-center md:gap-16 items-center size-full"
 >
-	<div class="w-full text-neutral-1 px-10 mt-2 cursor-pointer">
+	<div class="w-full mt-[2%] px-10 grow-0">
 		<fa-icon
 			(click)="navigateBack()"
 			[icon]="faArrowLeft"
+			class="text-neutral-1 cursor-pointer"
 		/>
 	</div>
-	<h3 class="text-center heading-text text-heading">Select Your Character</h3>
 
-	<div class="flex justify-evenly flex-wrap gap-5 max-w-[400px] px-4">
-		@for (character of characters; track $index) {
-		<app-character-profile
-			[name]="character"
-			(selected)="selectCharacter($event)"
-		/>
-		}
+	<div
+		class="flex justify-center flex-col w-full sm:w-1/3 gap-[2%] my-auto grow"
+	>
+		<h3 class="text-center heading-text text-heading grow-0">
+			Choose Your Character
+		</h3>
+		<div
+			class="grid grid-cols-2 content-center align-middle gap-y-[5%] grow grid-rows-[repeat(3,_minmax(0,_160px))] max-h-[700px]"
+		>
+			@for (character of characters; track $index) { @if ($last) {
+			<app-character-profile
+				[name]="character"
+				shadowColor="#f17447"
+				(selected)="selectCharacter($event)"
+				class="col-span-2"
+			/>
+			} @else {
+			<app-character-profile
+				[name]="character"
+				shadowColor="#f17447"
+				(selected)="selectCharacter($event)"
+			/>
+
+			} }
+		</div>
 	</div>
 </div>

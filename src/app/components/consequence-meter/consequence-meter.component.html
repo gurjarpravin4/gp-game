@@ -1,0 +1,28 @@
+<fa-icon
+	[icon]="elementIcon.icon"
+	size="2x"
+	[style]="'left:' + elementIcon.position.toString() + '%'"
+	[class]="
+		'absolute z-10 top-[50%] translate-y-[-50%] text-neutral-50 text-' +
+		elementIcon.color
+	"
+></fa-icon>
+
+<div class="wrapper shadow-sm shadow-[#601393]">
+	<div
+		class="consequence-div body-text text-body border-r-2 border-b-2 border-l-2 border-border"
+	>
+		@if (type === "karma") {
+		<!-- blank line -->
+		Karma: {{ storyController.karmaPoints() }}
+		<!-- blank line -->
+		} @else if (type === "emotional") {
+		<small>
+			Emotional Core Imbalance:
+			<span class="float-end">{{ scene()?.emotionalCore }}</span>
+			<br />
+			{{ scene()?.subtitle }}
+		</small>
+		}
+	</div>
+</div>

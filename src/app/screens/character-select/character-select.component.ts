@@ -10,7 +10,7 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 	selector: "app-character-select",
 	imports: [CharacterProfileComponent, FontAwesomeModule],
 	templateUrl: "./character-select.component.html",
-	styles: ``,
+	styleUrl: "./character-select.component.css",
 })
 export class CharacterSelectComponent {
 	gameState = inject(GameStateService);

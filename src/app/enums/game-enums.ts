@@ -12,7 +12,7 @@ export enum MaleCharacter {
 }
 
 export enum FemaleCharacter {
-	Samira = "Samira",
+	Samaira = "Samaira",
 	Bhumi = "Bhumi",
 	Anika = "Anika",
 	Jhanvi = "Jhanvi",

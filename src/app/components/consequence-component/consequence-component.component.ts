@@ -1,11 +1,12 @@
 import { Component, effect, inject } from "@angular/core";
 import { StoryControllerService } from "../../services/story-controller.service";
+import { ConsequenceMeterComponent } from "../consequence-meter/consequence-meter.component";
 
 @Component({
 	selector: "app-consequence-component",
-	imports: [],
+	imports: [ConsequenceMeterComponent],
 	templateUrl: "./consequence-component.component.html",
-	styles: ``,
+	styleUrl: "./consequence-component.component.css",
 })
 export class ConsequenceComponentComponent {
 	storyController = inject(StoryControllerService);

@@ -1,0 +1,9 @@
+.weird-shape {
+    width: 353px;
+    height: 60px;
+    background-image: url('/images/shapes/weird-shape.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 11px;
+}

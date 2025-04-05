@@ -27,9 +27,9 @@
 }
 
 @font-face {
-    font-family: Solitas;
-    src: url('/fonts/solitasserifnormregular.otf') format('opentype');
-    font-weight: 400;
+    font-family: Nami;
+    src: url('/fonts/Nami W04 Bold.ttf') format('truetype');
+    font-weight: 700;
 }
 
 /* Theme for the game */
@@ -40,8 +40,9 @@
     --color-heading: #3bffe2;
     --color-neutral-1: #e2e1e3;
     --color-neutral-2: #F2F2F7;
+    --color-border: #aa8f22;
     /* Fonts */
-    --font-heading: Solitas, sans-serif;
+    --font-heading: Nami, sans-serif;
     --font-title: Amarante, sans-serif;
     --font-body: Petita, sans-serif;
 }
@@ -58,11 +59,11 @@
 }
 
 .choice-text {
-    @apply font-body font-medium text-[28px] leading-[36px]
+    @apply font-body font-medium text-[24px] leading-[32px]
 }
 
 .heading-text {
-    @apply font-heading font-normal text-4xl leading-[44px] tracking-[0.03em]
+    @apply font-heading font-normal text-3xl leading-[36px] tracking-[0.03em]
 }
 
 .title-text {
@@ -80,6 +81,19 @@
 }
 
 /* from-[#FFEFB3] */
+
+.emotional {
+    @apply bg-gradient-to-r from-red-600 via-yellow-500 to-green-600
+}
+
+.karma {
+    @apply bg-gradient-to-r from-green-600 via-yellow-500 to-red-600
+}
+
+/* 
+.consequence-div {
+    @apply absolute right-2 top-[100%] shadow-xl shadow-[#601393] border-[#d7ac04] border-l-2 border-b-2 border-r-2 bg-radial to-primary-1 from-[#601393] rounded-b-lg p-2
+} */
 
 
 @font-face {

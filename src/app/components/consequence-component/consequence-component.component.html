@@ -1,13 +1,23 @@
 <div
-	class="h-svh w-svw flex-col flex items-center justify-end p-8 gap-10 bg-contain bg-center bg-no-repeat"
+	class="h-svh w-svw flex-col flex items-center justify-between p-8 gap-10 bg-contain bg-center bg-no-repeat"
 	[style.background-image]="'url(' + scene()?.imageURL + ')'"
 	[style.background-size]="'100% 100%'"
 >
+	<h2 class="heading-text text-heading">
+		Every choice we make sets a ripple in motion—sooner or later, the waves
+		return.
+	</h2>
+	<app-consequence-meter
+		type="karma"
+		[element]="storyController.story()?.element || 'hand'"
+	/>
+	<app-consequence-meter type="emotional" />
 	<div
-		class="w-[350px] bg-primary-1 consequence-text text-heading rounded-md p-1 text-center"
+		class="weird-shape consequence-text flex items-center text-heading rounded-md py-2 px-4 text-center"
 	>
-		{{ scene()?.title }}
+		<span class="my-auto">{{ scene()?.title }}</span>
 	</div>
+
 	<div class="w-full flex justify-end">
 		<button
 			(click)="storyController.setCurrentSceneId(nextScene)"
