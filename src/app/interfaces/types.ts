@@ -1,4 +1,16 @@
 import { IconDefinition } from "@fortawesome/free-solid-svg-icons";
+import { Gender } from "../enums/game-enums";
+
+export interface Player {
+	firstName: string | undefined;
+	lastName: string | undefined;
+	element: Element | undefined;
+	karmicChallenge: string | undefined;
+	elementIcon: IconDefinition | undefined;
+	iconColor: string;
+	traits: string[] | undefined;
+	gender: Gender | undefined;
+}
 
 export interface Story {
 	storyId: string;

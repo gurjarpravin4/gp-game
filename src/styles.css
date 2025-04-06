@@ -80,6 +80,10 @@
     @apply w-9 h-8 bg-linear-to-r from-[#F8DB6B] via-[#EFBF04] to-[#A78603] rounded-lg border-[3px] border-[#FFDF75C9] shadow-2xl text-primary-1
 }
 
+.play-btn {
+    @apply w-[104px] h-[33px] bg-linear-to-r from-[#FFEFB3] via-[#EFBF04] to-[#A78603] border-[3px] border-[#FFDF75C9] shadow-2xl shadow-[#F2BE10A8] text-primary-1 rounded-[10px] cursor-pointer font-semibold
+}
+
 /* from-[#FFEFB3] */
 
 .emotional {

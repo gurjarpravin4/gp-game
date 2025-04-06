@@ -1,18 +1,21 @@
-<div class="w-svw h-full flex flex-col items-center justify-center gap-4">
-	<h2 class="choice-text">Gender: {{ gameState.gender() }}</h2>
-	<h2 class="choice-text">Character: {{ gameState.character() }}</h2>
-	<button
-		(click)="clearData()"
-		class="choice-btn choice-text"
-	>
-		Clear Saved Data
-	</button>
-	<p class="body-text">This button is just to reset (for testing purposes)</p>
-
-	<button
-		(click)="router.navigateByUrl('story-container')"
-		class="choice-btn choice-text"
-	>
-		Open {{ gameState.character() }}'s story
-	</button>
+<div class="w-svw h-svh flex flex-col items-center justify-center gap-4">
+	<app-character-capsule />
 </div>
+
+<!-- <fa-icon [icon]="gameState.Player()?.elementIcon || '0'"></fa-icon>
+<h2 class="choice-text">Gender: {{ gameState.gender() }}</h2>
+<h2 class="choice-text">Character: {{ gameState.character() }}</h2>
+<button
+    (click)="clearData()"
+    class="play-btn choice-text"
+>
+    Start over
+</button>
+<p class="body-text">This button is just to reset (for testing purposes)</p>
+
+<button
+    (click)="router.navigateByUrl('story-container')"
+    class="play-btn choice-text"
+>
+    Open {{ gameState.character() }}'s story
+</button> -->

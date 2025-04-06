@@ -1,0 +1,18 @@
+<img
+	[src]="getPlayerImage()"
+	alt="player-image"
+	class="player-img"
+/>
+<!-- w-fit absolute left-[50%] translate-x-[-50%] top-[70%] -->
+<div class="player-name heading-text text-heading">
+	<h2>
+		{{ gamestate.Player()?.firstName }} <br />
+		{{ gamestate.Player()?.lastName }}
+	</h2>
+</div>
+
+<img
+	[src]="getElementImage()"
+	alt="element-icon"
+	class="element-img"
+/>

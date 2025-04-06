@@ -4,10 +4,13 @@ import { Keys } from "../../enums/game-enums";
 import { GameStateService } from "../../services/game-state.service";
 import { Router } from "@angular/router";
 import { StoryControllerService } from "../../services/story-controller.service";
+import { players } from "../../constants";
+import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
+import { CharacterCapsuleComponent } from "../../components/character-capsule/character-capsule.component";
 
 @Component({
 	selector: "app-game-home",
-	imports: [],
+	imports: [FontAwesomeModule, CharacterCapsuleComponent],
 	templateUrl: "./game-home.component.html",
 	styles: ``,
 })
@@ -17,6 +20,14 @@ export class GameHomeComponent {
 	router = inject(Router);
 
 	ngOnInit() {
+		// Find the player from the players list whose name is the same as the selected character
+		this.gameState.Player.set(
+			players.find(
+				(p) => p.firstName === this.gameState.character()?.toString()
+			)
+		);
+		console.table(this.gameState.Player());
+
 		// get the character's story
 		// get the current passage
 		this.storyManager.loadStory();

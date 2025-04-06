@@ -6,6 +6,7 @@ import {
 	MaleCharacter,
 } from "../enums/game-enums";
 import { Preferences } from "@capacitor/preferences";
+import { Player } from "../interfaces/types";
 
 @Injectable({
 	providedIn: "root",
@@ -16,6 +17,7 @@ export class GameStateService {
 	isLoaded = signal<boolean | undefined>(false);
 	gender = signal<Gender | undefined>(undefined);
 	character = signal<MaleCharacter | FemaleCharacter | undefined>(undefined);
+	Player = signal<Player | undefined>(undefined);
 
 	async setIsLoaded(value: boolean) {
 		this.isLoaded.set(value);

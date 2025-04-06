@@ -25,4 +25,5 @@ export enum Keys {
 	character = "character",
 	currentSceneId = "currentSceneId",
 	karmaPoints = "karmaPoints",
+	emotionalCore = "emotionalCore",
 }

@@ -17,10 +17,10 @@ export class StoryControllerService {
 
 	story = signal<Story | undefined>(undefined);
 	character = signal<MaleCharacter | FemaleCharacter | undefined>(undefined);
-	element = signal<Element | undefined>(undefined);
 	currentSceneId = signal<number | undefined>(undefined);
 	currentScene = signal<Scene | undefined>(undefined);
 	karmaPoints = signal<number | undefined>(undefined);
+	emotionalCore = signal<number | undefined>(undefined);
 	maxKarmaPoints = 100;
 
 	constructor() {
@@ -47,6 +47,8 @@ export class StoryControllerService {
 				this.getKarmaPoints();
 				// update maxKarmaPoints
 				this.maxKarmaPoints = data.maxTotalKarma;
+				// get Emotional core
+				this.getEmotionalCore();
 			});
 	}
 
@@ -88,7 +90,29 @@ export class StoryControllerService {
 		);
 		// update signal value
 		this.karmaPoints.set(points || 0);
-		console.log("Karma points");
+		console.log("Karma points", this.karmaPoints());
+	}
+
+	async setEmotionalCore(points: number) {
+		// calculate the new core points by adding the newly passed value to the old emotionalCore value
+		const newCore = (this.emotionalCore() ?? 0) + points;
+		// update signal value
+		this.karmaPoints.set(newCore);
+		// update capacitor storage
+		await Preferences.set({
+			key: Keys.emotionalCore,
+			value: newCore.toString(),
+		});
+	}
+
+	async getEmotionalCore() {
+		// fetch emotionalCore from ionic storage
+		const points = Number(
+			(await Preferences.get({ key: Keys.emotionalCore })).value
+		);
+		// update signal value
+		this.emotionalCore.set(points || 0);
+		console.log("Emotional Core", this.emotionalCore());
 	}
 
 	// function to get the current scene
@@ -99,6 +123,6 @@ export class StoryControllerService {
 		);
 		// update the signal
 		this.currentScene.set(scene);
-		console.log("current scene", this.currentScene());
+		console.table(this.currentScene());
 	}
 }

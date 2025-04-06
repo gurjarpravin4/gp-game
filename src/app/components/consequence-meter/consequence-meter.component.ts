@@ -15,6 +15,7 @@ import {
 	ElementIcon,
 	Scene,
 } from "../../interfaces/types";
+import { GameStateService } from "../../services/game-state.service";
 
 @Component({
 	selector: "app-consequence-meter",
@@ -24,6 +25,7 @@ import {
 })
 export class ConsequenceMeterComponent {
 	storyController = inject(StoryControllerService);
+	gameState = inject(GameStateService);
 
 	@Input()
 	type!: ConsequenceMeter;
@@ -56,46 +58,9 @@ export class ConsequenceMeterComponent {
 					: 75,
 		};
 		// Initliaize the elementIcon wrt element
-		switch (this.element) {
-			case "fire":
-				this.elementIcon = {
-					icon: faFire,
-					color: "orange-600",
-					position: 100 - this.handIcon.position,
-				};
-				break;
-			case "water":
-				this.elementIcon = {
-					icon: faWater,
-					color: "blue-600",
-					position: 100 - this.handIcon.position,
-				};
-				break;
-			case "earth":
-				this.elementIcon = {
-					icon: faEarth,
-					color: "stone-800",
-					position: 100 - this.handIcon.position,
-				};
-				break;
-			case "air":
-				this.elementIcon = {
-					icon: faWind,
-					color: "sky-300",
-					position: 100 - this.handIcon.position,
-				};
-				break;
-			case "ether":
-				this.elementIcon = {
-					icon: faSpaceShuttle,
-					color: "slate-900",
-					position: 100 - this.handIcon.position,
-				};
-				break;
-			default:
-				this.elementIcon = this.handIcon;
-				break;
-		}
+		this.elementIcon.icon = this.gameState.Player()?.elementIcon || faHand;
+		this.elementIcon.color = this.gameState.Player()?.iconColor || "#fff";
+		this.elementIcon.position = 100 - this.handIcon.position;
 	}
 
 	// Host binding will apply the karma class defined in css to the host only when input type is karma

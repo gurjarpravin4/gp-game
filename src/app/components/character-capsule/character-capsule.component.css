@@ -1,0 +1,102 @@
+:host {
+    /* dimensions */
+    width: 276px;
+    height: 552px;
+    /* border styling */
+    border-radius: 117px;
+    border: 2px solid var(--color-border);
+    /* background styling */
+    background-size: 140%;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* shadow */
+    box-shadow: 0 10px 50px -3px #5b1c75, 0 4px 6px -4px #5b1c75;
+    /* relative positioning to center the image */
+    position: relative;
+    /* overflow visible as img width exceeds the host width */
+    overflow: visible;
+}
+
+.player-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 150%;
+    width: 130%;
+    height: auto;
+}
+
+.player-name {
+    width: fit-content;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+
+h2 {
+    position: relative;
+}
+
+h2::before {
+    content: '';
+    width: 50%;
+    height: 10px;
+    position: absolute;
+    /* push the element to vertical center and left of the h2 element */
+    top: 50%;
+    left: -50%;
+    transform: translate(0, -50%);
+    border-top: 2px solid #673c30;
+    border-bottom: 2px solid #673c30;
+}
+
+h2::after {
+    content: '';
+    width: 50%;
+    height: 10px;
+    position: absolute;
+    /* push the element to vertical center and left of the h2 element */
+    top: 50%;
+    right: -50%;
+    transform: translate(0, -50%);
+    border-top: 2px solid #673c30;
+    border-bottom: 2px solid #673c30;
+}
+
+.element-img {
+    position: absolute;
+    left: 50%;
+    top: 57%;
+    transform: translate(-50%, 0);
+    width: 60px;
+    z-index: 10;
+}
+
+/* 673c30 */
+
+:host(.fire-bg) {
+    background-image: url("/images/capsule-bgs/fire.png") !important;
+}
+
+:host(.water-bg) {
+    background-image: url("/images/capsule-bgs/water.png") !important;
+}
+
+:host(.air-bg) {
+    background-image: url("/images/capsule-bgs/air.png") !important;
+}
+
+:host(.earth-bg) {
+    background-image: url("/images/capsule-bgs/earth.png") !important;
+}
+
+:host(.ether-bg) {
+    background-image: url("/images/capsule-bgs/ether.png") !important;
+}
+
+.element-not-found {
+    background-color: red;
+}
