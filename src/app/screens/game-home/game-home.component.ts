@@ -2,9 +2,9 @@ import { Component, inject } from "@angular/core";
 import { Preferences } from "@capacitor/preferences";
 import { Keys } from "../../enums/game-enums";
 import { GameStateService } from "../../services/game-state.service";
-import { Router } from "@angular/router";
+import { Router, RouterModule } from "@angular/router";
 import { StoryControllerService } from "../../services/story-controller.service";
-import { players } from "../../constants";
+import { Endings, players } from "../../constants";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { faPlay, faArrowRotateLeft } from "@fortawesome/free-solid-svg-icons";
 import { CharacterCapsuleComponent } from "../../components/character-capsule/character-capsule.component";
@@ -20,6 +20,7 @@ import { TraitComponent } from "../../components/trait/trait.component";
 		KarmicChallengeComponent,
 		GameCurrencyComponent,
 		TraitComponent,
+		RouterModule,
 	],
 	templateUrl: "./game-home.component.html",
 	styleUrl: "./game-home.component.css",
@@ -39,6 +40,10 @@ export class GameHomeComponent {
 			)
 		);
 		console.table(this.gameState.Player());
+		// initialise the endings
+		this.gameState.elementEndings =
+			Endings[this.gameState.Player()?.element || "fire"];
+		console.log("Endings:", this.gameState.elementEndings);
 
 		// get the character's story
 		// get the current passage

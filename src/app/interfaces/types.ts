@@ -46,3 +46,21 @@ export interface ElementIcon {
 export type Element = "fire" | "water" | "earth" | "air" | "ether" | "hand";
 
 export type ConsequenceMeter = "karma" | "emotional";
+
+export type EndingKeys =
+	| "balancedEnlightenment"
+	| "ruthlessSuccess"
+	| "isolatedWanderer"
+	| "brokenMartyr"
+	| "shadowedOutcast";
+
+export interface Ending {
+	heading: string;
+	subHeading: string;
+	content: EndingContent[];
+}
+
+export interface EndingContent {
+	title: "Rewards" | "Punishment" | "Lesson" | "Solution";
+	subtitle: string[];
+}

@@ -21,6 +21,14 @@
 		<fa-icon [icon]="play" />
 		{{ (storyManager.currentSceneId() || 0) === 0 ? "Play" : "Resume" }}
 	</button>
+
+	<button
+		class="play-btn"
+		routerLink="ending"
+	>
+		Ending
+	</button>
+
 	<button
 		(click)="clearData()"
 		class="play-btn"

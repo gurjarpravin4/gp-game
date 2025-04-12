@@ -6,7 +6,7 @@ import {
 	MaleCharacter,
 } from "../enums/game-enums";
 import { Preferences } from "@capacitor/preferences";
-import { Player } from "../interfaces/types";
+import { Ending, EndingKeys, Player } from "../interfaces/types";
 
 @Injectable({
 	providedIn: "root",
@@ -18,6 +18,8 @@ export class GameStateService {
 	gender = signal<Gender | undefined>(undefined);
 	character = signal<MaleCharacter | FemaleCharacter | undefined>(undefined);
 	Player = signal<Player | undefined>(undefined);
+
+	elementEndings!: Record<EndingKeys, Ending>;
 
 	async setIsLoaded(value: boolean) {
 		this.isLoaded.set(value);

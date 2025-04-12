@@ -1,0 +1,65 @@
+<div class="heading-container">
+	<fa-icon
+		class="rotate-45"
+		[icon]="star"
+	/>
+	<h2 class="heading-text">GAME COMPLETED</h2>
+	<fa-icon
+		class="rotate-45"
+		[icon]="star"
+	/>
+</div>
+
+<div class="image-container">
+	<img
+		width="130"
+		height="130"
+		[src]="getPlayerImage()"
+		alt="character-img"
+	/>
+</div>
+
+<div class="game-currency-container body-text">
+	<div class="game-currency-div">
+		<img
+			width="21"
+			height="21"
+			src="/images/game-currency-icons/karma.png"
+			alt="karma-icon"
+		/>
+		<h3>
+			{{ storyController.karmaPoints() }}
+		</h3>
+	</div>
+	<div class="game-currency-div">
+		<img
+			width="21"
+			height="21"
+			[src]="getElementIconURL()"
+			alt="element-icon"
+		/>
+		<h3>
+			{{ storyController.emotionalCore() }}
+		</h3>
+	</div>
+</div>
+
+<div class="ending-name-div">
+	<h2 class="choice-text text-heading ending-heading">
+		{{ finalEnding.heading }}
+	</h2>
+	<p class="body-text">{{ finalEnding.subHeading }}</p>
+</div>
+
+<div class="wrapper">
+	<div class="ending-content-div body-text text-body">
+		@for (item of finalEnding.content; track $index) {
+		<div>
+			<h3>{{ item.title }}</h3>
+			@for (sub of item.subtitle; track $index) {
+			<p>{{ sub }}</p>
+			}
+		</div>
+		}
+	</div>
+</div>
