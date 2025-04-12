@@ -6,18 +6,30 @@ import { Router } from "@angular/router";
 import { StoryControllerService } from "../../services/story-controller.service";
 import { players } from "../../constants";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
+import { faPlay, faArrowRotateLeft } from "@fortawesome/free-solid-svg-icons";
 import { CharacterCapsuleComponent } from "../../components/character-capsule/character-capsule.component";
+import { KarmicChallengeComponent } from "../../components/karmic-challenge/karmic-challenge.component";
+import { GameCurrencyComponent } from "../../components/game-currency/game-currency.component";
+import { TraitComponent } from "../../components/trait/trait.component";
 
 @Component({
 	selector: "app-game-home",
-	imports: [FontAwesomeModule, CharacterCapsuleComponent],
+	imports: [
+		FontAwesomeModule,
+		CharacterCapsuleComponent,
+		KarmicChallengeComponent,
+		GameCurrencyComponent,
+		TraitComponent,
+	],
 	templateUrl: "./game-home.component.html",
-	styles: ``,
+	styleUrl: "./game-home.component.css",
 })
 export class GameHomeComponent {
 	gameState = inject(GameStateService);
 	storyManager = inject(StoryControllerService);
 	router = inject(Router);
+	play = faPlay;
+	restart = faArrowRotateLeft;
 
 	ngOnInit() {
 		// Find the player from the players list whose name is the same as the selected character

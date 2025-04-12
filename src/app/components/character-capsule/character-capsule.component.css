@@ -1,9 +1,9 @@
 :host {
     /* dimensions */
-    width: 276px;
-    height: 552px;
+    width: 65vw;
+    aspect-ratio: 1/2;
     /* border styling */
-    border-radius: 117px;
+    border-radius: 130px;
     border: 2px solid var(--color-border);
     /* background styling */
     background-size: 140%;

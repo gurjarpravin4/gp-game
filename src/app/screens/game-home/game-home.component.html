@@ -1,5 +1,32 @@
-<div class="w-svw h-svh flex flex-col items-center justify-center gap-4">
-	<app-character-capsule />
+<div class="w-full flex justify-between">
+	<app-karmic-challenge />
+	<app-game-currency />
+</div>
+<app-character-capsule />
+<div class="trait-container">
+	<div class="trait-heading">
+		<h2 class="consequence-text">Traits</h2>
+	</div>
+	<div class="trait-list-container">
+		@for (trait of gameState.Player()?.traits; track $index) {
+		<app-trait [trait]="trait" />
+		}
+	</div>
+</div>
+<div class="game-buttons-container">
+	<button
+		(click)="clearData()"
+		class="play-btn"
+	>
+		<fa-icon [icon]="play" />
+		{{ storyManager.currentScene() || 0 > 0 ? "Resume" : "Play" }}
+	</button>
+	<button
+		(click)="router.navigateByUrl('story-container')"
+		class="play-btn"
+	>
+		<fa-icon [icon]="restart" /> Start Over
+	</button>
 </div>
 
 <!-- <fa-icon [icon]="gameState.Player()?.elementIcon || '0'"></fa-icon>

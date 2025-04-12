@@ -1,0 +1,19 @@
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 31vw;
+    height: 72px;
+    border-radius: 15px;
+    border: 1px solid var(--color-border);
+    scroll-snap-align: start;
+    color: var(--color-neutral-1);
+
+    /* ring like border */
+    background-image: radial-gradient(circle, #601393, var(--color-primary-1));
+    border-left: 2px solid var(--color-border);
+    border-bottom: 2px solid var(--color-border);
+    border-right: 2px solid var(--color-border);
+
+    box-shadow: 0 1px 10px 0 #601393;
+}

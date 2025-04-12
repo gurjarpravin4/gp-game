@@ -1,0 +1,33 @@
+:host {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-grow: 1;
+    color: var(--color-neutral-1);
+    min-width: 50dvw;
+    padding: 6px;
+}
+
+/* karmic challenge div */
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+}
+
+/* karma symbol image */
+img {
+    width: 54px;
+    height: 54px;
+}
+
+/* karmic challenge h2 */
+h2 {
+    font-size: 1rem;
+}
+
+/* karmic challenge content h3 */
+h3 {
+    font-size: 0.688rem;
+}

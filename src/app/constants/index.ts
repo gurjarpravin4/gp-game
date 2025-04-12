@@ -17,7 +17,7 @@ export const players: Player[] = [
 		karmicChallenge: "Power vs Responsibility",
 		elementIcon: faSpaceShuttle,
 		iconColor: "#68169e",
-		traits: ["trait1", "trait2", "trait3"],
+		traits: ["trait1", "trait2", "trait3", "trait4", "trait5", "trait6"],
 	},
 	{
 		firstName: "Anant",
@@ -27,7 +27,7 @@ export const players: Player[] = [
 		karmicChallenge: "Power vs Responsibility",
 		elementIcon: faSpaceShuttle,
 		iconColor: "#68169e",
-		traits: ["trait1", "trait2", "trait3"],
+		traits: ["trait1", "trait2", "trait3", "trait4", "trait5", "trait6"],
 	},
 	{
 		firstName: "Anika",
@@ -37,7 +37,7 @@ export const players: Player[] = [
 		karmicChallenge: "Power vs Responsibility",
 		elementIcon: faWind,
 		iconColor: "#365075",
-		traits: ["trait1", "trait2", "trait3"],
+		traits: ["trait1", "trait2", "trait3", "trait4", "trait5", "trait6"],
 	},
 	{
 		firstName: "Bhumi",
@@ -47,7 +47,7 @@ export const players: Player[] = [
 		karmicChallenge: "Power vs Responsibility",
 		elementIcon: faEarth,
 		iconColor: "#877d62",
-		traits: ["trait1", "trait2", "trait3"],
+		traits: ["trait1", "trait2", "trait3", "trait4", "trait5", "trait6"],
 	},
 	{
 		firstName: "Jhanvi",
@@ -57,7 +57,7 @@ export const players: Player[] = [
 		karmicChallenge: "Power vs Responsibility",
 		elementIcon: faWater,
 		iconColor: "#61accf",
-		traits: ["trait1", "trait2", "trait3"],
+		traits: ["trait1", "trait2", "trait3", "trait4", "trait5", "trait6"],
 	},
 	{
 		firstName: "Kshitij",
@@ -67,7 +67,7 @@ export const players: Player[] = [
 		karmicChallenge: "Power vs Responsibility",
 		elementIcon: faEarth,
 		iconColor: "#",
-		traits: ["trait1", "trait2", "trait3"],
+		traits: ["trait1", "trait2", "trait3", "trait4", "trait5", "trait6"],
 	},
 	{
 		firstName: "Samaira",
@@ -77,7 +77,7 @@ export const players: Player[] = [
 		karmicChallenge: "Power vs Responsibility",
 		elementIcon: faFire,
 		iconColor: "#877d62",
-		traits: ["trait1", "trait2", "trait3"],
+		traits: ["trait1", "trait2", "trait3", "trait4", "trait5", "trait6"],
 	},
 	{
 		firstName: "Samir",
@@ -87,7 +87,7 @@ export const players: Player[] = [
 		karmicChallenge: "Power vs Responsibility",
 		elementIcon: faWind,
 		iconColor: "#365075",
-		traits: ["trait1", "trait2", "trait3"],
+		traits: ["trait1", "trait2", "trait3", "trait4", "trait5", "trait6"],
 	},
 	{
 		firstName: "Varun",
@@ -97,7 +97,7 @@ export const players: Player[] = [
 		karmicChallenge: "Power vs Responsibility",
 		elementIcon: faWater,
 		iconColor: "#61accf",
-		traits: ["trait1", "trait2", "trait3"],
+		traits: ["trait1", "trait2", "trait3", "trait4", "trait5", "trait6"],
 	},
 	{
 		firstName: "Vikrant",
@@ -107,6 +107,6 @@ export const players: Player[] = [
 		karmicChallenge: "Power vs Responsibility",
 		elementIcon: faFire,
 		iconColor: "#877d62",
-		traits: ["trait1", "trait2", "trait3"],
+		traits: ["trait1", "trait2", "trait3", "trait4", "trait5", "trait6"],
 	},
 ];
