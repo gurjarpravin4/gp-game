@@ -52,10 +52,12 @@ export class GameHomeComponent {
 		await Preferences.remove({ key: Keys.gender });
 		await Preferences.remove({ key: Keys.character });
 		await Preferences.remove({ key: Keys.currentSceneId });
+		await Preferences.clear();
 		// set the project varaibles as undefined
 		this.gameState.gender.set(undefined);
 		this.gameState.character.set(undefined);
 		this.storyManager.currentSceneId.set(undefined);
+		this.gameState.Player.set(undefined);
 		// navigate to home
 		this.router.navigateByUrl("gender-select");
 	}

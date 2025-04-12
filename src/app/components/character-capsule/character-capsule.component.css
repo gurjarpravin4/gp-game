@@ -1,6 +1,6 @@
 :host {
     /* dimensions */
-    width: 65vw;
+    width: 60vw;
     aspect-ratio: 1/2;
     /* border styling */
     border-radius: 130px;
@@ -43,6 +43,7 @@ h2 {
 h2::before {
     content: '';
     width: 50%;
+    max-width: 50px;
     height: 10px;
     position: absolute;
     /* push the element to vertical center and left of the h2 element */
@@ -56,6 +57,7 @@ h2::before {
 h2::after {
     content: '';
     width: 50%;
+    max-width: 50px;
     height: 10px;
     position: absolute;
     /* push the element to vertical center and left of the h2 element */

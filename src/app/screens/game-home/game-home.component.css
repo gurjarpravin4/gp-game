@@ -30,7 +30,7 @@
 }
 
 .trait-list-container {
-    padding: 4px 2vw;
+    padding: 4px 0;
     display: flex;
     gap: 3.5vw;
     overflow-x: scroll;

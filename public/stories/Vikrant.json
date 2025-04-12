@@ -7,7 +7,7 @@
 		{
 			"id": 0,
 			"sceneType": "stage",
-			"imageURL": "#",
+			"imageURL": "/images/stage-divider-icons/stage 1.png",
 			"title": "Welcome to Stage 1: The Awakening",
 			"subtitle": "There are no easy answers now—will you embrace the consequences of your past or rewrite your fate? In a world of shifting truths, only you can define what is just.The final choice is upon you!",
 			"links": [{ "text": "chevron_right", "to": 1, "karmaPoints": 0 }]
@@ -212,7 +212,7 @@
 		{
 			"id": 24,
 			"sceneType": "stage",
-			"imageURL": "#",
+			"imageURL": "/images/stage-divider-icons/stage 2.png",
 			"title": "Welcome to Stage 2: The Moral Junction",
 			"subtitle": "The lines between right and wrong begin to blur—will you stand by your beliefs or adapt to survive? Every decision deepens your karma and tests your resolve. The weight of your choices grows heavier!",
 			"links": [{ "text": "chevron_right", "to": 25, "karmaPoints": 0 }]
@@ -362,7 +362,7 @@
 		{
 			"id": 40,
 			"sceneType": "stage",
-			"imageURL": "#",
+			"imageURL": "/images/stage-divider-icons/stage 3.png",
 			"title": "Welcome to Stage 3: The Final Trial",
 			"subtitle": "There are no easy answers now—will you embrace the consequences of your past or rewrite your fate? In a world of shifting truths, only you can define what is just.The final choice is upon you!",
 			"links": [{ "text": "chevron_right", "to": 41, "karmaPoints": 0 }]
@@ -526,7 +526,7 @@
 		{
 			"id": 58,
 			"sceneType": "stage",
-			"imageURL": "#",
+			"imageURL": "/images/stage-divider-icons/stage 3.png",
 			"title": "Welcome to Stage 3: The Final Trial",
 			"subtitle": "There are no easy answers now—will you embrace the consequences of your past or rewrite your fate? In a world of shifting truths, only you can define what is just.The final choice is upon you!",
 			"links": [{ "text": "chevron_right", "to": 59, "karmaPoints": 0 }]
@@ -692,7 +692,7 @@
 		{
 			"id": 76,
 			"sceneType": "stage",
-			"imageURL": "#",
+			"imageURL": "/images/stage-divider-icons/stage 3.png",
 			"title": "Welcome to Stage 3: The Final Trial",
 			"subtitle": "There are no easy answers now—will you embrace the consequences of your past or rewrite your fate? In a world of shifting truths, only you can define what is just.The final choice is upon you!",
 			"links": [{ "text": "chevron_right", "to": 77, "karmaPoints": 0 }]
