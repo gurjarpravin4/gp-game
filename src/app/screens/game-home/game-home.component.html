@@ -15,34 +15,16 @@
 </div>
 <div class="game-buttons-container">
 	<button
-		(click)="clearData()"
+		(click)="router.navigateByUrl('story-container')"
 		class="play-btn"
 	>
 		<fa-icon [icon]="play" />
-		{{ storyManager.currentScene() || 0 > 0 ? "Resume" : "Play" }}
+		{{ (storyManager.currentSceneId() || 0) === 0 ? "Play" : "Resume" }}
 	</button>
 	<button
-		(click)="router.navigateByUrl('story-container')"
+		(click)="clearData()"
 		class="play-btn"
 	>
 		<fa-icon [icon]="restart" /> Start Over
 	</button>
 </div>
-
-<!-- <fa-icon [icon]="gameState.Player()?.elementIcon || '0'"></fa-icon>
-<h2 class="choice-text">Gender: {{ gameState.gender() }}</h2>
-<h2 class="choice-text">Character: {{ gameState.character() }}</h2>
-<button
-    (click)="clearData()"
-    class="play-btn choice-text"
->
-    Start over
-</button>
-<p class="body-text">This button is just to reset (for testing purposes)</p>
-
-<button
-    (click)="router.navigateByUrl('story-container')"
-    class="play-btn choice-text"
->
-    Open {{ gameState.character() }}'s story
-</button> -->
