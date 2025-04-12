@@ -1,20 +1,7 @@
 import { Component, HostBinding, inject, Input, signal } from "@angular/core";
-import { FontAwesomeModule, SizeProp } from "@fortawesome/angular-fontawesome";
-import {
-	faFire,
-	faWater,
-	faWind,
-	faEarth,
-	faSpaceShuttle,
-	faHand,
-} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { StoryControllerService } from "../../services/story-controller.service";
-import {
-	ConsequenceMeter,
-	Element,
-	ElementIcon,
-	Scene,
-} from "../../interfaces/types";
+import { ConsequenceMeter, ElementIcon, Scene } from "../../interfaces/types";
 import { GameStateService } from "../../services/game-state.service";
 
 @Component({
@@ -31,11 +18,7 @@ export class ConsequenceMeterComponent {
 	type!: ConsequenceMeter;
 
 	@Input()
-	element!: Element;
-
-	elementIcon!: ElementIcon;
-
-	handIcon!: ElementIcon;
+	icon!: ElementIcon;
 
 	scene = signal<Scene | undefined>(undefined);
 
@@ -44,23 +27,10 @@ export class ConsequenceMeterComponent {
 		this.scene = this.storyController.currentScene;
 
 		console.info(this.storyController.karmaPoints());
+	}
 
-		// Initialize the default hand icon
-		this.handIcon = {
-			icon: faHand,
-			color: "neutral-50",
-			// position: 25% if emotionalCore<0; 50% if emotionalCore=0; 75% if emotionalCore> 0
-			position:
-				(this.scene()?.emotionalCore || 0) < 0
-					? 25
-					: (this.scene()?.emotionalCore || 0) === 0
-					? 50
-					: 75,
-		};
-		// Initliaize the elementIcon wrt element
-		this.elementIcon.icon = this.gameState.Player()?.elementIcon || faHand;
-		this.elementIcon.color = this.gameState.Player()?.iconColor || "#fff";
-		this.elementIcon.position = 100 - this.handIcon.position;
+	getIconPosition(): string {
+		return `left: ${this.icon.position}%`;
 	}
 
 	// Host binding will apply the karma class defined in css to the host only when input type is karma

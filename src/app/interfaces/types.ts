@@ -35,11 +35,11 @@ export interface Link {
 	text: string;
 	to: string;
 	karmaPoints: number;
+	emotionalCore: number;
 }
 
 export interface ElementIcon {
-	icon: IconDefinition;
-	color: string;
+	iconURL: string;
 	position: number;
 }
 

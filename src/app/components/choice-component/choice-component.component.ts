@@ -17,6 +17,8 @@ export class ChoiceComponentComponent {
 	handleChoice(choice: Link) {
 		// update the karma points based on the choice made
 		this.storyController.setKarmaPoints(choice.karmaPoints);
+		// update emotionalCore based on choice made
+		this.storyController.setEmotionalCore(choice.emotionalCore);
 		// update the current scene id (need to typecast is)
 		this.storyController.setCurrentSceneId(Number(choice.to));
 	}

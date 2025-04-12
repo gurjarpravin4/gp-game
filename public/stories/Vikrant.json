@@ -78,12 +78,14 @@
 				{
 					"text": "Take Credit and gain success",
 					"to": 9,
-					"karmaPoints": -5
+					"karmaPoints": -5,
+					"emotionalCore": 5
 				},
 				{
 					"text": "Stay honest, but slow your growth",
 					"to": 16,
-					"karmaPoints": 5
+					"karmaPoints": 5,
+					"emotionalCore": -5
 				}
 			]
 		},
@@ -207,6 +209,8 @@
 			"imageURL": "images/Vikrant/Vikrant_23.webp",
 			"title": "Stronger alliances; Future opportunities will have more people supporting",
 			"subtitle": "Fire learns to temper ambition with honour",
+			"karmaPoints": 5,
+			"emotionalCore": -5,
 			"links": [{ "text": "chevron_right", "to": 24, "karmaPoints": 0 }]
 		},
 		{

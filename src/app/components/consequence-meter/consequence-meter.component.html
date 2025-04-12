@@ -1,12 +1,10 @@
-<fa-icon
-	[icon]="elementIcon.icon"
-	size="2x"
-	[style]="'left:' + elementIcon.position.toString() + '%'"
-	[class]="
-		'absolute z-10 top-[50%] translate-y-[-50%] text-neutral-50 text-' +
-		elementIcon.color
-	"
-></fa-icon>
+<img
+	width="25"
+	height="25"
+	[src]="icon.iconURL"
+	[style]="getIconPosition()"
+	class="absolute z-10 top-[50%] translate-y-[-50%]"
+/>
 
 <div class="wrapper shadow-sm shadow-[#601393]">
 	<div
@@ -14,7 +12,7 @@
 	>
 		@if (type === "karma") {
 		<!-- blank line -->
-		Karma: {{ storyController.karmaPoints() }}
+		Karma: {{ scene()?.karmaPoints }}
 		<!-- blank line -->
 		} @else if (type === "emotional") {
 		<small>

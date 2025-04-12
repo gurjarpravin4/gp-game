@@ -86,11 +86,11 @@
 
 /* from-[#FFEFB3] */
 
-.emotional {
+.karma {
     @apply bg-gradient-to-r from-red-600 via-yellow-500 to-green-600
 }
 
-.karma {
+.emotional {
     @apply bg-gradient-to-r from-green-600 via-yellow-500 to-red-600
 }
 

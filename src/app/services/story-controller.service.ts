@@ -54,13 +54,10 @@ export class StoryControllerService {
 
 	// Functions to update capacitor storage
 	async setCurrentSceneId(id: number) {
-		// add the karma points to total karma
-		this.setKarmaPoints(this.currentScene()?.karmaPoints ?? 0);
 		// update capacitor storage
 		await Preferences.set({ key: Keys.currentSceneId, value: id.toString() });
 		// update signal value
 		this.currentSceneId.set(id);
-		// update karma points
 	}
 
 	async getCurrentSceneId() {
@@ -97,7 +94,7 @@ export class StoryControllerService {
 		// calculate the new core points by adding the newly passed value to the old emotionalCore value
 		const newCore = (this.emotionalCore() ?? 0) + points;
 		// update signal value
-		this.karmaPoints.set(newCore);
+		this.emotionalCore.set(newCore);
 		// update capacitor storage
 		await Preferences.set({
 			key: Keys.emotionalCore,
