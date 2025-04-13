@@ -6,21 +6,25 @@
 	class="absolute z-10 top-[50%] translate-y-[-50%]"
 />
 
+@if (type === "karma") {
 <div class="wrapper shadow-sm shadow-[#601393]">
 	<div
 		class="consequence-div body-text text-body border-r-2 border-b-2 border-l-2 border-border"
 	>
-		@if (type === "karma") {
-		<!-- blank line -->
-		Karma: {{ scene()?.karmaPoints }}
-		<!-- blank line -->
-		} @else if (type === "emotional") {
-		<small>
-			Emotional Core Imbalance:
-			<span class="float-end">{{ scene()?.emotionalCore }}</span>
-			<br />
-			{{ scene()?.subtitle }}
-		</small>
-		}
+		<p>Karma: {{ scene()?.karmaPoints }}</p>
 	</div>
 </div>
+} @else if (type === "emotional") {
+<div class="wrapper shadow-sm shadow-[#601393] max-width-container">
+	<div
+		class="consequence-div body-text text-body border-r-2 border-b-2 border-l-2 border-border"
+	>
+		<small>
+			Emotional Core Imbalance:
+			<span>{{ scene()?.emotionalCore }}</span>
+			<br />
+			<p class="float-end text-wrap">{{ scene()?.subtitle }}</p>
+		</small>
+	</div>
+</div>
+}

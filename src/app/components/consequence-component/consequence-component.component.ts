@@ -25,7 +25,12 @@ export class ConsequenceComponentComponent {
 	}
 
 	getKarmaIconPosition(): number {
-		if ((this.scene()?.karmaPoints || 0) < 0) return 25;
+		// if both karma and emotional core are equal (which happens in stage 2 & 3) then place the karma and emotional core icons at 50%
+		// else if karma is negative, place the karma at 25% and emotional core icon at 75%
+		// else if karma is positive, place the karma at 75% and emotional core icon at 25%
+		// if any other case occurs, return the value 50 by defualt
+		if (this.scene()?.karmaPoints === this.scene()?.emotionalCore) return 50;
+		else if ((this.scene()?.karmaPoints || 0) < 0) return 25;
 		else if ((this.scene()?.karmaPoints || 0) > 0) return 75;
 		return 50;
 	}

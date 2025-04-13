@@ -7,21 +7,22 @@
 		Every choice we make sets a ripple in motion—sooner or later, the waves
 		return.
 	</h2>
-	<!-- Karma meeter -->
-	<app-consequence-meter
-		type="karma"
-		[icon]="karmaIcon"
-	/>
-	<!-- Emotional core meter -->
-	<app-consequence-meter
-		type="emotional"
-		[icon]="elementIcon"
-	/>
-
-	<div
-		class="weird-shape consequence-text flex items-center text-heading rounded-md py-2 px-4 text-center"
-	>
-		<span class="my-auto">{{ scene()?.title }}</span>
+	<div class="flex flex-col justify-between mt-auto">
+		<!-- Karma meter -->
+		<app-consequence-meter
+			type="karma"
+			[icon]="karmaIcon"
+		/>
+		<!-- Emotional core meter -->
+		<app-consequence-meter
+			type="emotional"
+			[icon]="elementIcon"
+		/>
+		<div
+			class="weird-shape consequence-text flex items-center text-heading rounded-md py-2 px-4 text-center mt-20"
+		>
+			<span class="my-auto">{{ scene()?.title }}</span>
+		</div>
 	</div>
 
 	<div class="w-full flex justify-end">

@@ -18,6 +18,10 @@
 	@if (currentScene()?.sceneType === "consequence") {
 	<app-consequence-component />
 	}
+	<!-- render ending component -->
+	@if (currentScene()?.sceneType === "ending") {
+	<app-ending />
+	}
 	<!-- blank line -->
 	}
 </div>

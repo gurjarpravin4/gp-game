@@ -73,7 +73,7 @@
 
 /* Buttons */
 .choice-btn {
-    @apply w-[353px] h-[60px] px-[18px] py-[16px] bg-linear-to-r from-[#FFEFB3] via-[#EFBF04] to-[#A78603] border-[3px] border-[#FFDF75C9] shadow-2xl shadow-[#F2BE10A8] text-primary-1 rounded-xl cursor-pointer font-bold
+    @apply w-[353px] min-h-[60px] px-[18px] py-[16px] bg-linear-to-r from-[#FFEFB3] via-[#EFBF04] to-[#A78603] border-[3px] border-[#FFDF75C9] shadow-2xl shadow-[#F2BE10A8] text-primary-1 rounded-xl cursor-pointer font-bold
 }
 
 .continue-btn {
@@ -81,7 +81,7 @@
 }
 
 .play-btn {
-    @apply w-[104px] h-[33px] bg-linear-to-r from-[#FFEFB3] via-[#EFBF04] to-[#A78603] border-[3px] border-[#FFDF75C9] shadow-2xl shadow-[#F2BE10A8] text-primary-1 rounded-[10px] cursor-pointer font-semibold
+    @apply min-w-[104px] h-[33px] px-2 bg-linear-to-r from-[#FFEFB3] via-[#EFBF04] to-[#A78603] border-[3px] border-[#FFDF75C9] shadow-2xl shadow-[#F2BE10A8] text-primary-1 rounded-[10px] cursor-pointer font-semibold
 }
 
 /* from-[#FFEFB3] */

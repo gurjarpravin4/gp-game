@@ -1,9 +1,10 @@
-import { Component, computed, inject, Signal } from "@angular/core";
+import { Component, computed, inject } from "@angular/core";
 import { StoryControllerService } from "../../services/story-controller.service";
 import { StageComponentComponent } from "../../components/stage-component/stage-component.component";
 import { NormalComponentComponent } from "../../components/normal-component/normal-component.component";
 import { ChoiceComponentComponent } from "../../components/choice-component/choice-component.component";
 import { ConsequenceComponentComponent } from "../../components/consequence-component/consequence-component.component";
+import { EndingComponent } from "../../components/ending/ending.component";
 
 @Component({
 	selector: "app-story-container",
@@ -12,6 +13,7 @@ import { ConsequenceComponentComponent } from "../../components/consequence-comp
 		NormalComponentComponent,
 		ChoiceComponentComponent,
 		ConsequenceComponentComponent,
+		EndingComponent,
 	],
 	templateUrl: "./story-container.component.html",
 	styles: ``,
@@ -22,6 +24,6 @@ export class StoryContainerComponent {
 	currentScene = computed(() => this.storyController.currentScene());
 
 	ngOnInit() {
-		console.log("Current scene from container", this.currentScene());
+		console.log("Current scene from story container", this.currentScene());
 	}
 }

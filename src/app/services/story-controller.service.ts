@@ -4,14 +4,13 @@ import { HttpClient } from "@angular/common/http";
 import { GameStateService } from "./game-state.service";
 import { FemaleCharacter, Keys, MaleCharacter } from "../enums/game-enums";
 import { Preferences } from "@capacitor/preferences";
+import { Router } from "@angular/router";
 
 @Injectable({
 	providedIn: "root",
 })
 export class StoryControllerService {
-	divWidthPercent() {
-		throw new Error("Method not implemented.");
-	}
+	router = inject(Router);
 	http = inject(HttpClient);
 	gameState = inject(GameStateService);
 
@@ -54,6 +53,8 @@ export class StoryControllerService {
 
 	// Functions to update capacitor storage
 	async setCurrentSceneId(id: number) {
+		// if current scene id has to be set to 0 that means the story is over and navigate back to home
+		if (id === 0) this.router.navigateByUrl("");
 		// update capacitor storage
 		await Preferences.set({ key: Keys.currentSceneId, value: id.toString() });
 		// update signal value

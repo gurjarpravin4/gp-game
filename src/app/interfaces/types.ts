@@ -22,7 +22,7 @@ export interface Story {
 
 export interface Scene {
 	id: number;
-	sceneType: "stage" | "normal" | "choice" | "consequence";
+	sceneType: "stage" | "normal" | "choice" | "consequence" | "ending";
 	imageURL?: string;
 	title?: string;
 	subtitle?: string;

@@ -113,8 +113,8 @@ export const players: Player[] = [
 
 export const FireEndings: Record<EndingKeys, Ending> = {
 	balancedEnlightenment: {
-		heading: "",
-		subHeading: "",
+		heading: "The Balanced Enlightenment",
+		subHeading: "The Harmonized Soul",
 		content: [
 			{
 				title: "Rewards",
