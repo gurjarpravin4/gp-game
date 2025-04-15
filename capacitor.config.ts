@@ -1,9 +1,9 @@
-import type { CapacitorConfig } from '@capacitor/cli';
+import type { CapacitorConfig } from "@capacitor/cli";
 
 const config: CapacitorConfig = {
-  appId: 'com.gp-game.app',
-  appName: 'gp-game',
-  webDir: 'dist'
+	appId: "com.karmaquest.app",
+	appName: "gp-game",
+	webDir: "dist/gp-game/browser",
 };
 
 export default config;
