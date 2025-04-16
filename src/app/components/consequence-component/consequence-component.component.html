@@ -25,7 +25,13 @@
 		</div>
 	</div>
 
-	<div class="w-full flex justify-end">
+	<div class="w-full flex justify-between">
+		<button
+			routerLink=""
+			class="continue-btn"
+		>
+			<fa-icon [icon]="homeIcon"></fa-icon>
+		</button>
 		<button
 			(click)="storyController.setCurrentSceneId(nextScene)"
 			class="material-symbols-outlined continue-btn"

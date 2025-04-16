@@ -1,9 +1,12 @@
 import { Component, effect, inject } from "@angular/core";
 import { StoryControllerService } from "../../services/story-controller.service";
+import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
+import { RouterModule } from "@angular/router";
+import { faHome, IconDefinition } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
 	selector: "app-normal-component",
-	imports: [],
+	imports: [FontAwesomeModule, RouterModule],
 	templateUrl: "./normal-component.component.html",
 	styles: ``,
 })
@@ -12,6 +15,7 @@ export class NormalComponentComponent {
 	scene = this.storyController.currentScene;
 	nextScene!: number;
 
+	homeIcon: IconDefinition = faHome;
 	constructor() {
 		// update next scene whenever the scene changes
 		effect(() => {

@@ -1,10 +1,13 @@
 import { Component, effect, inject } from "@angular/core";
 import { StoryControllerService } from "../../services/story-controller.service";
 import { Link } from "../../interfaces/types";
+import { faHome, IconDefinition } from "@fortawesome/free-solid-svg-icons";
+import { RouterModule } from "@angular/router";
+import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 
 @Component({
 	selector: "app-choice-component",
-	imports: [],
+	imports: [RouterModule, FontAwesomeModule],
 	templateUrl: "./choice-component.component.html",
 	styles: ``,
 })
@@ -13,6 +16,8 @@ export class ChoiceComponentComponent {
 	scene = this.storyController.currentScene;
 
 	constructor() {}
+
+	homeIcon: IconDefinition = faHome;
 
 	handleChoice(choice: Link) {
 		// update the karma points based on the choice made

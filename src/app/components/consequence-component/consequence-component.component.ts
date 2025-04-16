@@ -3,10 +3,13 @@ import { StoryControllerService } from "../../services/story-controller.service"
 import { ConsequenceMeterComponent } from "../consequence-meter/consequence-meter.component";
 import { ElementIcon } from "../../interfaces/types";
 import { GameStateService } from "../../services/game-state.service";
+import { RouterModule } from "@angular/router";
+import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
+import { faHome, IconDefinition } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
 	selector: "app-consequence-component",
-	imports: [ConsequenceMeterComponent],
+	imports: [ConsequenceMeterComponent, RouterModule, FontAwesomeModule],
 	templateUrl: "./consequence-component.component.html",
 	styleUrl: "./consequence-component.component.css",
 })
@@ -18,6 +21,8 @@ export class ConsequenceComponentComponent {
 
 	elementIcon!: ElementIcon;
 	karmaIcon!: ElementIcon;
+
+	homeIcon: IconDefinition = faHome;
 
 	getElementIconURL(): string {
 		const player = this.gameState.Player();

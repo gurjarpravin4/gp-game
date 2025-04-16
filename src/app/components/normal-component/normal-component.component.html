@@ -3,10 +3,18 @@
 	[style.background-image]="'url(' + scene()?.imageURL + ')'"
 	[style.background-size]="'100% 100%'"
 >
-	<button
-		(click)="storyController.setCurrentSceneId(nextScene)"
-		class="material-symbols-outlined continue-btn"
-	>
-		{{scene()?.links?.[0]?.text}}
-	</button>
+	<div class="w-full flex justify-between">
+		<button
+			routerLink=""
+			class="continue-btn"
+		>
+			<fa-icon [icon]="homeIcon"></fa-icon>
+		</button>
+		<button
+			(click)="storyController.setCurrentSceneId(nextScene)"
+			class="material-symbols-outlined continue-btn"
+		>
+			{{scene()?.links?.[0]?.text}}
+		</button>
+	</div>
 </div>
