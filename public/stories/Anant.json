@@ -1,0 +1,902 @@
+{
+	"storyId": 1,
+	"name": "Dilemma of Dharma",
+	"maxTotalKarma": 35,
+	"element": "air",
+	"scenes": [
+		{
+			"id": 0,
+			"sceneType": "stage",
+			"imageURL": "/images/stage-divider-icons/stage 1.png",
+			"title": "Welcome to Stage 1: The Awakening",
+			"subtitle": "Your first step towards the world of choices - Will you follow your heart or surrender to the pressures around you? The path you choose will shape your Karma & Emotional balance. The choice is yours!",
+			"links": [{ "text": "chevron_right", "to": 1, "karmaPoints": 0 }]
+		},
+		{
+			"id": 1,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_1.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 2, "karmaPoints": 0 }]
+		},
+		{
+			"id": 2,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_2.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 3, "karmaPoints": 0 }]
+		},
+		{
+			"id": 3,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_3.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 4, "karmaPoints": 0 }]
+		},
+		{
+			"id": 4,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_4.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 5, "karmaPoints": 0 }]
+		},
+		{
+			"id": 5,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_5.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 6, "karmaPoints": 0 }]
+		},
+		{
+			"id": 6,
+			"sceneType": "choice",
+			"imageURL": "images/Anant/Anant_6.webp",
+			"title": "What will you choose?",
+			"subtitle": "#",
+			"links": [
+            { 
+                "text": "Continue the material chase", 
+                "to": 7, 
+                "karmaPoints": -5,
+                "emotionalCore": 5 
+            },
+            { 
+                "text": "Step into the unknown", 
+                "to": 14, 
+                "karmaPoints": 5,
+                "emotionalCore": -5 
+            }
+        ]
+		},
+		{
+			"id": 7,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_7.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{"text": "Take the money", "to": 8, "karmaPoints": -5 }]
+		},
+		{
+			"id": 8,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_8.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 9, "karmaPoints": 0 }]
+		},
+		{
+			"id": 9,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_9.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 10, "karmaPoints": 0 }]
+		},
+		{
+			"id": 10,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_10.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 11, "karmaPoints": 0 }]
+		},
+		{
+			"id": 11,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_11.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 12, "karmaPoints": 0 }]
+		},
+		{
+			"id": 12,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_12.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 13, "karmaPoints": 0 }]
+		},
+		{
+			"id": 13,
+			"sceneType": "consequence",
+			"imageURL": "images/Anant/Anant_13.webp",
+			"title": "Personal relationships suffer as you rarely call your family. Later a major crisis will force you to confront your emptiness.",
+			"subtitle": "Your Ether element weakens. You lose the ability to seek beyond what's tangible.",
+            "karmaPoints": -5,
+			"emotionalCore": 5,
+			"links": [{ "text": "chevron_right", "to": 20, "karmaPoints": 0 }]
+		},
+		{
+			"id": 14,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_14.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 15, "karmaPoints": 0 }]
+		},
+		{
+			"id": 15,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_15.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 16, "karmaPoints": 0 }]
+		},
+		{
+			"id": 16,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_16.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 17, "karmaPoints": 0 }]
+		},
+		{
+			"id": 17,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_17.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 18, "karmaPoints": 0 }]
+		},
+		{
+			"id": 18,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_18.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 19, "karmaPoints": 0 }]
+		},
+		{
+			"id": 19,
+			"sceneType": "consequence",
+			"imageURL": "images/Anant/Anant_19.webp",
+			"title": "You try to seek meaning beyond wealth although you don't have all the answers yet, but you finally start asking the right questions",
+			"subtitle": "Your Ether element strengthens. You feel a sense of curiosity, a pull towards something deeper",
+            "karmaPoints": 5,
+			"emotionalCore": -5,
+			"links": [{ "text": "chevron_right", "to": 20, "karmaPoints": 0 }]
+		},
+		{
+			"id": 20,
+			"sceneType": "stage",
+			"imageURL": "/images/stage-divider-icons/stage 2.png",
+			"title": "Welcome to Stage 2: The Moral Junction",
+			"subtitle": "The lines between right and wrong begin to blur — Will you stand by your beliefs or adapt to survive? Every decision deepens your karma and tests your resolve. The weight of your choices grows heavier!",
+			"links": [{ "text": "chevron_right", "to": 21, "karmaPoints": 0 }]
+		},
+		{
+			"id": 21,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_21.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 22, "karmaPoints": 0 }]
+		},
+		{
+			"id": 22,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_22.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 23, "karmaPoints": 0 }]
+		},
+		{
+			"id": 23,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_23.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 24, "karmaPoints": 0 }]
+		},
+		{
+			"id": 24,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_24.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 25, "karmaPoints": 0 }]
+		},
+		{
+			"id": 25,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_25.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 26, "karmaPoints": 0 }]
+		},
+		{
+			"id": 26,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_26.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 27, "karmaPoints": 0 }]
+		},
+		{
+			"id": 27,
+			"sceneType": "choice",
+			"imageURL": "images/Anant/Anant_27.webp",
+			"title": "What will you choose?",
+			"subtitle": "#",
+			"links": [
+            { 
+                "text": "Chase power", 
+                "to": 28, 
+                "karmaPoints": -10,
+                "emotionalCore": 10 
+            },
+            { 
+                "text": "Balance both worlds", 
+                "to": 31, 
+                "karmaPoints": 5,
+                "emotionalCore": 5 
+            },
+            { 
+                "text": "Walk away", 
+                "to": 34, 
+                "karmaPoints": 10,
+                "emotionalCore": -10 
+            }
+        ]
+		},
+		{
+			"id": 28,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_28.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 29, "karmaPoints": 0 }]
+		},
+		{
+			"id": 29,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_29.webp",
+			"title": "#",
+			"subtitle": "Y#",
+			"links": [{ "text": "chevron_right", "to": 30, "karmaPoints": 0 }]
+		},
+		{
+			"id": 30,
+			"sceneType": "consequence",
+			"imageURL": "images/Anant/Anant_30.webp",
+			"title": "You're promoted, richer than ever and makes a name for yourself in the industry however you arrive late for your mother. Your family becomes distant from you.",
+			"subtitle": "Emotionally, you break. Success feels empty. You've everything, yet you lost everything.",
+            "karmaPoints": -10,
+			"emotionalCore": 10,
+			"links": [{ "text": "chevron_right", "to": 37, "karmaPoints": 0 }]
+		},
+		{
+			"id": 31,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_31.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 32, "karmaPoints": 0 }]
+		},
+		{
+			"id": 32,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_32.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 33, "karmaPoints": 0 }]
+		},
+		{
+			"id": 33,
+			"sceneType": "consequence",
+			"imageURL": "images/Anant/Anant_33.webp",
+			"title": "You try to balance but fail to fully commit to either making your family and your bosses both resent you.",
+			"subtitle": "Internally, you feel lost. The guilt and the fear lingers that you’re still missing something.",
+            "karmaPoints": 5,
+			"emotionalCore": 5,
+			"links": [{ "text": "chevron_right", "to": 57, "karmaPoints": 0 }]
+		},
+		{
+			"id": 34,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_34.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 35, "karmaPoints": 0 }]
+		},
+		{
+			"id": 35,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_35.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 36, "karmaPoints": 0 }]
+		},
+		{
+			"id": 36,
+			"sceneType": "consequence",
+			"imageURL": "images/Anant/Anant_36.webp",
+			"title": "You finally understand the true meaning of life however professionally your reputation takes a hit.",
+			"subtitle": "You question everything and fear of regret lingers although internally you feel satisfied.",
+            "karmaPoints": 10,
+			"emotionalCore": -10,
+			"links": [{ "text": "chevron_right", "to": 75, "karmaPoints": 0 }]
+		},
+		{
+			"id": 37,
+			"sceneType": "stage",
+			"imageURL": "/images/stage-divider-icons/stage 3.png",
+			"title": "Welcome to Stage 3: The Final Trial",
+			"subtitle": "There are no easy answers now—will you embrace the consequences of your past or rewrite your fate? In a world of shifting truths, only you can define what is just.The final choice is upon you!",
+			"links": [{ "text": "chevron_right", "to": 38, "karmaPoints": 0 }]
+		},
+		{
+			"id": 38,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_38.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 39, "karmaPoints": 0 }]
+		},
+		{
+			"id": 39,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_39.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 40, "karmaPoints": 0 }]
+		},
+		{
+			"id": 40,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_40.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 41, "karmaPoints": 0 }]
+		},
+		{
+			"id": 41,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_41.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 42, "karmaPoints": 0 }]
+		},
+		{
+			"id": 42,
+			"sceneType": "choice",
+			"imageURL": "images/Anant/Anant_42.webp",
+			"title": "What will you choose?",
+			"subtitle": "#",
+			"links": [
+            { 
+                "text": "Manipulate the situation & escape", 
+                "to": 43, 
+                "karmaPoints": -20,
+                "emotionalCore": 20 
+            },
+            { 
+                "text": "Expose the firm secretly", 
+                "to": 48, 
+                "karmaPoints": 10,
+                "emotionalCore": 10 
+            },
+            { 
+                "text": "Take the fall to protect the company", 
+                "to": 52, 
+                "karmaPoints": 20,
+                "emotionalCore": -20 
+            }
+        ]
+		},
+		{
+			"id": 43,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_43.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 44, "karmaPoints": 0 }]
+		},
+		{
+			"id": 44,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_44.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{"text": "chevron_right", "to": 45, "karmaPoints": 0 }]
+		},
+		{
+			"id": 45,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_45.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 46, "karmaPoints": 0 }]
+		},
+		{
+			"id": 46,
+			"sceneType": "consequence",
+			"imageURL": "images/Anant/Anant_46.webp",
+			"title": "You gain everything externally but lose inner peace, haunted by guilt and distrust.",
+			"subtitle": "You choose fear and self-preservation over integrity.",
+            "karmaPoints": -20,
+			"emotionalCore": 20,
+			"links": [{ "text": "chevron_right", "to": 96, "karmaPoints": 0 }]
+		},
+		{
+			"id": 47,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_47.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 0, "karmaPoints": 0 }]
+		},
+		{
+			"id": 48,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_48.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 49, "karmaPoints": 0 }]
+		},
+		{
+			"id": 49,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_49.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 50, "karmaPoints": 0 }]
+		},
+		{
+			"id": 50,
+			"sceneType": "consequence",
+			"imageURL": "images/Anant/Anant_50.webp",
+			"title": "You sacrifice career stability, live with anxiety — but gain inner peace and moral clarity.",
+			"subtitle": "You choose truth over safety, driven by a need for justice but burdened by fear.",
+            "karmaPoints": 10,
+			"emotionalCore": 10,
+			"links": [{ "text": "chevron_right", "to": 96, "karmaPoints": 0 }]
+		},
+		{
+			"id": 51,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_51.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 0, "karmaPoints": 0 }]
+		},
+		{
+			"id": 52,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_52.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 53, "karmaPoints": 0 }]
+		},
+		{
+			"id": 53,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_53.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 54, "karmaPoints": 0 }]
+		},
+		{
+			"id": 54,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_54.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 55, "karmaPoints": 0 }]
+		},
+		{
+			"id": 55,
+			"sceneType": "consequence",
+			"imageURL": "images/Anant/Anant_55.webp",
+			"title": "You sacrifice everything for a system that abandons you, left with regret and a broken sense of trust.",
+			"subtitle": "You seek belonging and approval through blind loyalty, ignoring your own worth.",
+            "karmaPoints": 20,
+			"emotionalCore": -20,
+			"links": [{ "text": "chevron_right", "to": 96, "karmaPoints": 0 }]
+		},
+		{
+			"id": 56,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_56.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 0, "karmaPoints": 0 }]
+		},
+		{
+			"id": 57,
+			"sceneType": "stage",
+			"imageURL": "/images/stage-divider-icons/stage 3.png",
+			"title": "Welcome to Stage 3: The Final Trial",
+			"subtitle": "There are no easy answers now—will you embrace the consequences of your past or rewrite your fate? In a world of shifting truths, only you can define what is just.The final choice is upon you!",
+			"links": [{ "text": "chevron_right", "to": 58, "karmaPoints": 0 }]
+		},
+		{
+			"id": 58,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_58.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 59, "karmaPoints": 0 }]
+		},
+		{
+			"id": 59,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_59.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 60, "karmaPoints": 0 }]
+		},
+		{
+			"id": 60,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_60.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 61, "karmaPoints": 0 }]
+		},
+		{
+			"id": 61,
+			"sceneType": "choice",
+			"imageURL": "images/Anant/Anant_61.webp",
+			"title": "What will you choose?",
+			"subtitle": "#",
+			"links": [
+            { 
+                "text": "Pursue career, leaving family behind", 
+                "to": 62, 
+                "karmaPoints": -20,
+                "emotionalCore": 20 
+            },
+            { 
+                "text": "Move abroad but support from afar ", 
+                "to": 67, 
+                "karmaPoints": 10,
+                "emotionalCore": 10 
+            },
+            { 
+                "text": "Stay & care for your father", 
+                "to": 71, 
+                "karmaPoints": 20,
+                "emotionalCore": -20 
+            }
+        ]
+		},
+		{
+			"id": 62,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_62.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 63, "karmaPoints": 0 }]
+		},
+		{
+			"id": 63,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_63.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 64, "karmaPoints": 0 }]
+		},
+		{
+			"id": 64,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_64.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [
+                { "text": "chevron_right", "to": 65, "karmaPoints": 0 }]
+		},
+		{
+			"id": 65,
+			"sceneType": "consequence",
+			"imageURL": "images/Anant/Anant_65.webp",
+			"title": "Though you gain worldly success, you lose irreplaceable time with loved ones—haunted by guilt and irreversible absence.",
+			"subtitle": "You choose ambition over family, avoiding emotional responsibility for success.",
+            "karmaPoints": -20,
+			"emotionalCore": 20,
+			"links": [{ "text": "chevron_right", "to": 96, "karmaPoints": 0}]
+		},
+		{
+			"id": 66,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_66.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 0, "karmaPoints": 0 }]
+		},
+		{
+			"id": 67,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_67.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 68, "karmaPoints": 0 }]
+		},
+		{
+			"id": 68,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_68.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 94, "karmaPoints": 0 }]
+		},
+		{
+			"id": 69,
+			"sceneType": "consequence",
+			"imageURL": "images/Anant/Anant_69.webp",
+			"title": "Your career flourish, but lingering guilt shadows your success.",
+			"subtitle": "You try to balance duty and ambition but struggle with emotional absence.",
+            "karmaPoints": 10,
+			"emotionalCore": 10,
+			"links": [{ "text": "chevron_right", "to": 96, "karmaPoints": 0 }]
+		},
+		{
+			"id": 70,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_70.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 0, "karmaPoints": 0 }]
+		},
+		{
+			"id": 71,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_71.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 72, "karmaPoints": 0 }]
+		},
+		{
+			"id": 72,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_72.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 73, "karmaPoints": 0 }]
+		},
+		{
+			"id": 73,
+			"sceneType": "consequence",
+			"imageURL": "images/Anant/Anant_73.webp",
+			"title": "Your career stalls, but you gain inner peace and a profound sense of purpose.",
+			"subtitle": "You sacrifice ambition for love, choosing presence over progress.",
+            "karmaPoints": 20,
+			"emotionalCore": -20,
+			"links": [{ "text": "chevron_right", "to": 96, "karmaPoints": 0 }]
+		},
+		{
+			"id": 74,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_74.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 0, "karmaPoints": 0 }]
+		},
+		{
+			"id": 75,
+			"sceneType": "stage",
+			"imageURL": "/images/stage-divider-icons/stage 3.png",
+			"title": "Welcome to Stage 3: The Final Trial",
+			"subtitle": "There are no easy answers now—will you embrace the consequences of your past or rewrite your fate? In a world of shifting truths, only you can define what is just.The final choice is upon you!",
+			"links": [{ "text": "chevron_right", "to": 76, "karmaPoints": 0 }]
+		},
+		{
+			"id": 76,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_76.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 77 , "karmaPoints": 0 }]
+		},
+		{
+			"id": 77,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_77.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 0, "karmaPoints": 0 }]
+		},
+		{
+			"id": 78,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_78.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 79, "karmaPoints": 0 }]
+		},
+		{
+			"id": 79,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_79.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 80, "karmaPoints": 0 }]
+		},
+		{
+			"id": 80,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_80.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "Rejoin the Corporate world", "to": 81, "karmaPoints": -20 }]
+		},
+		{
+			"id": 81,
+			"sceneType": "choice",
+			"imageURL": "images/Anant/Anant_81.webp",
+			"title": "What will you choose?",
+			"subtitle": "#",
+			"links": [
+            { 
+                "text": "Accept the investor's terms", 
+                "to": 82, 
+                "karmaPoints": -20,
+                "emotionalCore": 20 
+            },
+            { 
+                "text": "Find alternative funding but with risk", 
+                "to": 87, 
+                "karmaPoints": 10,
+                "emotionalCore": 10 
+            },
+            { 
+                "text": "Shut down over selling out", 
+                "to": 92, 
+                "karmaPoints": 20,
+                "emotionalCore": -20 
+            }
+        ]
+		},
+		{
+			"id": 82,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_82.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 83, "karmaPoints": 0}]
+		},
+		{
+			"id": 83,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_83.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 84, "karmaPoints": 0 }]
+		},
+		{
+			"id": 84,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_84.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 85, "karmaPoints": 0 }]
+		},
+		{
+			"id": 85,
+			"sceneType": "consequence",
+			"imageURL": "images/Anant/Anant_85.webp",
+			"title": "You gain financial security but lose your identity, vision, and meaningful relationships.",
+			"subtitle": "You sacrifice purpose for stability, prioritizing control over connection.",
+            "karmaPoints": -20,
+			"emotionalCore": 20,
+			"links": [{ "text": "chevron_right", "to": 96, "karmaPoints": 0 }]
+		},
+		{
+			"id": 86,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_86.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 0, "karmaPoints": 0 }]
+		},
+		{
+			"id": 87,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_87.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 88, "karmaPoints": 0 }]
+		},
+		{
+			"id": 88,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_88.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 89, "karmaPoints": 0 }]
+		},
+		{
+			"id": 89,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_89.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 90, "karmaPoints": 0 }]
+		},
+		{
+			"id": 90,
+			"sceneType": "consequence",
+			"imageURL": "images/Anant/Anant_90.webp",
+			"title": "Though your vision survives, you're consumed by self-doubt, questioning if you're truly enough—for your work, your family, and yourself.",
+			"subtitle": "You remain torn between purpose and responsibility.",
+            "karmaPoints": 10,
+			"emotionalCore": 10,
+			"links": [{ "text": "chevron_right", "to": 96, "karmaPoints": 0 }]
+		},
+		{
+			"id": 91,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_91.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 0, "karmaPoints": 0 }]     
+        },
+        {
+			"id": 92,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_92.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 93, "karmaPoints": 0 }]           
+        },
+        {
+			"id": 93,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_93.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 94, "karmaPoints": 0 }]        
+        },
+        {
+			"id": 94,
+			"sceneType": "normal",
+			"imageURL": "images/Anant/Anant_94.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 95, "karmaPoints": 0 }]        
+        },
+        {
+			"id": 95,
+			"sceneType": "consequence",
+			"imageURL": "images/Anant/Anant_95.webp",
+			"title": "Loses all success but gains clarity, inner peace, and support from loved ones.",
+			"subtitle": "Sacrifices ambition for integrity.",
+            "karmaPoints": 20,
+			"emotionalCore": -20,
+			"links": [{ "text": "chevron_right", "to": 96, "karmaPoints": 0 }]        
+        },
+        {
+			"id": 96,
+			"sceneType": "ending",
+			"imageURL": "#",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 47, "karmaPoints": 0 }]
+		}
+    ]
+} 

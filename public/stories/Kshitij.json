@@ -1,0 +1,895 @@
+{
+	"storyId": 1,
+	"name": "Dilemma of Dharma",
+	"maxTotalKarma": 35,
+	"element": "earth",
+	"scenes": [
+		{
+			"id": 0,
+			"sceneType": "stage",
+			"imageURL": "/images/stage-divider-icons/stage 1.png",
+			"title": "Welcome to Stage 1: The Awakening",
+			"subtitle": "Your first step towards the world of choices - Will you follow your heart or surrender to the pressures around you? The path you choose will shape your Karma & Emotional balance. The choice is yours!",
+			"links": [{ "text": "chevron_right", "to": 1, "karmaPoints": 0 }]
+		},
+		{
+			"id": 1,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_1.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 2, "karmaPoints": 0 }]
+		},
+		{
+			"id": 2,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_2.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 3, "karmaPoints": 0 }]
+		},
+		{
+			"id": 3,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_3.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 4, "karmaPoints": 0 }]
+		},
+		{
+			"id": 4,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_4.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 5, "karmaPoints": 0 }]
+		},
+		{
+			"id": 5,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_5.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 6, "karmaPoints": 0 }]
+		},
+		{
+			"id": 6,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_6.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 7, "karmaPoints": 0 }]
+		},
+		{
+			"id": 7,
+			"sceneType": "choice",
+			"imageURL": "images/Kshitij/Kshitij_7.webp",
+			"title": "What will you choose?",
+			"subtitle": "#",
+			"links": [
+				{
+					"text": "Take the money",
+					"to": 8,
+					"karmaPoints": -5,
+					"emotionalCore": 5
+				},
+				{
+					"text": "Refuse the money",
+					"to": 16,
+					"karmaPoints": 5,
+					"emotionalCore": -5
+				}
+			]
+		},
+		{
+			"id": 8,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_8.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 9, "karmaPoints": 0 }]
+		},
+		{
+			"id": 9,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_9.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 10, "karmaPoints": 0 }]
+		},
+		{
+			"id": 10,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_10.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 11, "karmaPoints": 0 }]
+		},
+		{
+			"id": 11,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_11.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 12, "karmaPoints": 0 }]
+		},
+		{
+			"id": 12,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_12.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 13, "karmaPoints": 0 }]
+		},
+		{
+			"id": 13,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_13.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 14, "karmaPoints": 0 }]
+		},
+		{
+			"id": 14,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_14.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 15, "karmaPoints": 0 }]
+		},
+		{
+			"id": 15,
+			"sceneType": "consequence",
+			"imageURL": "images/Kshitij/Kshitij_15.webp",
+			"title": "Career boost but lost self control; You get faster movement & growth, but internal guilt grows",
+			"subtitle": "Earth weakens as integrity erodes",
+			"karmaPoints": -5,
+			"emotionalCore": 5,
+			"links": [{ "text": "chevron_right", "to": 23, "karmaPoints": 0 }]
+		},
+		{
+			"id": 16,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_16.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 17, "karmaPoints": 0 }]
+		},
+		{
+			"id": 17,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_17.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 18, "karmaPoints": 0 }]
+		},
+		{
+			"id": 18,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_18.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 19, "karmaPoints": 0 }]
+		},
+		{
+			"id": 19,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_19.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 20, "karmaPoints": 0 }]
+		},
+		{
+			"id": 20,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_20.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 21, "karmaPoints": 0 }]
+		},
+		{
+			"id": 21,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_21.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 22, "karmaPoints": 0 }]
+		},
+		{
+			"id": 22,
+			"sceneType": "consequence",
+			"imageURL": "images/Kshitij/Kshitij_22.webp",
+			"title": "Your reputation as a fearless journalist grows. Later, an honest philanthropist offers funding without conditions",
+			"subtitle": "Earth (adaptability) becomes more resilient - You find a sustainable way to fight",
+			"karmaPoints": 5,
+			"emotionalCore": -5,
+			"links": [{ "text": "chevron_right", "to": 23, "karmaPoints": 0 }]
+		},
+		{
+			"id": 23,
+			"sceneType": "stage",
+			"imageURL": "/images/stage-divider-icons/stage 2.png",
+			"title": "Welcome to Stage 2: The Moral Junction",
+			"subtitle": "The lines between right and wrong begin to blur — Will you stand by your beliefs or adapt to survive? Every decision deepens your karma and tests your resolve. The weight of your choices grows heavier!",
+			"links": [{ "text": "chevron_right", "to": 24, "karmaPoints": 0 }]
+		},
+		{
+			"id": 24,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_24.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 25, "karmaPoints": 0 }]
+		},
+		{
+			"id": 25,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_25.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 26, "karmaPoints": 0 }]
+		},
+		{
+			"id": 26,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_26.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 27, "karmaPoints": 0 }]
+		},
+		{
+			"id": 27,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_27.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 28, "karmaPoints": 0 }]
+		},
+		{
+			"id": 28,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_28.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 29, "karmaPoints": 0 }]
+		},
+		{
+			"id": 29,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_29.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 30, "karmaPoints": 0 }]
+		},
+		{
+			"id": 30,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_30.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [
+				{
+					"text": "chevron_right",
+					"to": 31,
+					"karmaPoints": 0
+				}
+			]
+		},
+		{
+			"id": 31,
+			"sceneType": "choice",
+			"imageURL": "images/Kshitij/Kshitij_31.webp",
+			"title": "What will you choose?",
+			"subtitle": "#",
+			"links": [
+				{
+					"text": "Accept the promotion",
+					"to": 32,
+					"karmaPoints": -10,
+					"emotionalCore": 10
+				},
+				{
+					"text": "Reveal the truth by staying hidden",
+					"to": 35,
+					"karmaPoints": 5,
+					"emotionalCore": 5
+				},
+				{
+					"text": "Come out guns blazing & expose the story",
+					"to": 39,
+					"karmaPoints": 10,
+					"emotionalCore": -10
+				}
+			]
+		},
+		{
+			"id": 32,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_32.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 33, "karmaPoints": 0 }]
+		},
+		{
+			"id": 33,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_33.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 34, "karmaPoints": 0 }]
+		},
+		{
+			"id": 34,
+			"sceneType": "consequence",
+			"imageURL": "images/Kshitij/Kshitij_34.webp",
+			"title": "Your career sees a major boost & is seen as one of the most influential journalists, however your relationships are strained",
+			"subtitle": "You bury your guilt under rationalization, but a small part of you knows that you are sold out",
+			"karmaPoints": -10,
+			"emotionalCore": 10,
+			"links": [{ "text": "chevron_right", "to": 42, "karmaPoints": 0 }]
+		},
+		{
+			"id": 35,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_35.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 36, "karmaPoints": 0 }]
+		},
+		{
+			"id": 36,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_36.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 37, "karmaPoints": 0 }]
+		},
+		{
+			"id": 37,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_37.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 38, "karmaPoints": 0 }]
+		},
+		{
+			"id": 38,
+			"sceneType": "consequence",
+			"imageURL": "images/Kshitij/Kshitij_38.webp",
+			"title": "The government can't silence you completely, but the constant fear of being revealed takes a toll on your health",
+			"subtitle": "You expose the truth but live in fear, caught between justice & survival.",
+			"karmaPoints": 5,
+			"emotionalCore": 5,
+			"links": [{ "text": "chevron_right", "to": 61, "karmaPoints": 0 }]
+		},
+		{
+			"id": 39,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_39.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 40, "karmaPoints": 0 }]
+		},
+		{
+			"id": 40,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_40.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 41, "karmaPoints": 0 }]
+		},
+		{
+			"id": 41,
+			"sceneType": "consequence",
+			"imageURL": "images/Kshitij/Kshitij_41.webp",
+			"title": "Your career hits rock bottom & you are caught into legal & fraud battles, impacting your career & personal relationships.",
+			"subtitle": "You uphold the truth but lose everything - career, stability & the people who once stood by you.",
+			"karmaPoints": 10,
+			"emotionalCore": -10,
+			"links": [{ "text": "chevron_right", "to": 79, "karmaPoints": 0 }]
+		},
+		{
+			"id": 42,
+			"sceneType": "stage",
+			"imageURL": "/images/stage-divider-icons/stage 3.png",
+			"title": "Welcome to Stage 3: The Final Trial",
+			"subtitle": "There are no easy answers now—will you embrace the consequences of your past or rewrite your fate? In a world of shifting truths, only you can define what is just.The final choice is upon you!",
+			"links": [{ "text": "chevron_right", "to": 43, "karmaPoints": 0 }]
+		},
+		{
+			"id": 43,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_43.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 44, "karmaPoints": 0 }]
+		},
+		{
+			"id": 44,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_44.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{"text": "chevron_right", "to": 45, "karmaPoints": 0 }]
+		},
+		{
+			"id": 45,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_45.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 46, "karmaPoints": 0 }]
+		},
+		{
+			"id": 46,
+			"sceneType": "choice",
+			"imageURL": "images/Kshitij/Kshitij_46.webp",
+			"title": "What will you choose?",
+			"subtitle": "#",
+			"links": [
+				{
+					"text": "Take the job with Saurav's network", 
+					"to": 47, 
+					"karmaPoints": -20,
+					"emotionalCore": 20
+				},
+				{
+					"text": "Struggle for truth while staying at Vrata",
+					"to": 52,
+					"karmaPoints": 10,
+					"emotionalCore": 10
+				},
+				{
+					"text": "Expose Saurav & risk everything",
+					"to": 56,
+					"karmaPoints": 20,
+					"emotionalCore": -20
+				}
+			]
+		},
+		{
+			"id": 47,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_47.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 48, "karmaPoints": 0 }]
+		},
+		{
+			"id": 48,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_48.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 49, "karmaPoints": 0 }]
+		},
+		{
+			"id": 49,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_49.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 50, "karmaPoints": 0 }]
+		},
+		{
+			"id": 50,
+			"sceneType": "consequence",
+			"imageURL": "images/Kshitij/Kshitij_50.webp",
+			"title": "Your success feels hollow as you lose Mohit's trust & becomes framed as a sold journalist",
+			"subtitle": "You gain power but lose your purpose, trapped in the very corruption you once fought.",
+			"karmaPoints": -20,
+			"emotionalCore": 20,
+			"links": [{ "text": "chevron_right", "to": 96, "karmaPoints": 0 }]
+		},
+		{
+			"id": 51,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_51.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 0, "karmaPoints": 0 }]
+		},
+		{
+			"id": 52,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_52.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 53, "karmaPoints": 0 }]
+		},
+		{
+			"id": 53,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_53.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 54, "karmaPoints": 0 }]
+		},
+		{
+			"id": 54,
+			"sceneType": "consequence",
+			"imageURL": "images/Kshitij/Kshitij_54.webp",
+			"title": "Doubts surround you - your integrity questioned. The constant anxiety takes a toll & you're always in the fear of losing control over your work.",
+			"subtitle": "You fight to stay true, but the lines between integrity and survival keeps blurring.",
+			"karmaPoints": 10,
+			"emotionalCore": 10,
+			"links": [{ "text": "chevron_right", "to": 96, "karmaPoints": 0 }]
+		},
+		{
+			"id": 55,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_55.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 0, "karmaPoints": 0 }]
+		},
+		{
+			"id": 56,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_56.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 57, "karmaPoints": 0 }]
+		},
+		{
+			"id": 57,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_57.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 58, "karmaPoints": 0 }]
+		},
+		{
+			"id": 58,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_58.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 59, "karmaPoints": 0 }]
+		},
+		{
+			"id": 59,
+			"sceneType": "consequence",
+			"imageURL": "images/Kshitij/Kshitij_59.webp",
+			"title": "You become a symbol of integrity for some in the media world but your career fades into uncertainty.",
+			"subtitle": "You stand for truth, but the cost is isolation & an uncertain future",
+			"karmaPoints": 20,
+			"emotionalCore": -20,
+			"links": [{ "text": "chevron_right", "to": 96, "karmaPoints": 0 }]
+		},
+		{
+			"id": 60,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_60.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 0, "karmaPoints": 0 }]
+		},
+		{
+			"id": 61,
+			"sceneType": "stage",
+			"imageURL": "/images/stage-divider-icons/stage 3.png",
+			"title": "Welcome to Stage 3: The Final Trial",
+			"subtitle": "There are no easy answers now—will you embrace the consequences of your past or rewrite your fate? In a world of shifting truths, only you can define what is just.The final choice is upon you!",
+			"links": [{ "text": "chevron_right", "to": 62, "karmaPoints": 0 }]
+		},
+		{
+			"id": 62,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_62.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 63, "karmaPoints": 0 }]
+		},
+		{
+			"id": 63,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_63.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 64, "karmaPoints": 0 }]
+		},
+		{
+			"id": 64,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_64.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 65, "karmaPoints": 0 }]
+		},
+		{
+			"id": 65,
+			"sceneType": "choice",
+			"imageURL": "images/Kshitij/Kshitij_65.webp",
+			"title": "What will you choose?",
+			"subtitle": "#",
+			"links": [
+			{ 
+				"text": "Destroy evidence & flee abroad", 
+				"to": 66, 
+				"karmaPoints": -20,
+				"emotionalCore": 20
+			},
+			{
+				"text": "Seek Protection",
+				"to": 71,
+				"karmaPoints": 10,
+				"emotionalCore": 10
+			},
+			{
+				"text": "Come forward at the risk of your career",
+				"to": 75,
+				"karmaPoints": 20,
+				"emotionalCore": -20
+			}
+		]
+		},
+		{
+			"id": 66,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_66.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 67, "karmaPoints": 0 }]
+		},
+		{
+			"id": 67,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_67.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 68, "karmaPoints": 0 }]
+		},
+		{
+			"id": 68,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_68.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 69, "karmaPoints": 0 }]
+		},
+		{
+			"id": 69,
+			"sceneType": "consequence",
+			"imageURL": "images/Kshitij/Kshitij_69.webp",
+			"title": "Safe in exile, you lose your roots, your relationships & the right to call any place home.",
+			"subtitle": "You survive but the guilt haunts every step - truth was spoken but courage faltered.",
+			"karmaPoints": -20,
+			"emotionalCore": 20,
+			"links": [{ "text": "chevron_right", "to": 96, "karmaPoints": 0 }]
+		},
+		{
+			"id": 70,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_70.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 0, "karmaPoints": 0 }]
+		},
+		{
+			"id": 71,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_71.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 72, "karmaPoints": 0 }]
+		},
+		{
+			"id": 72,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_72.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 73, "karmaPoints": 0 }]
+		},
+		{
+			"id": 73,
+			"sceneType": "consequence",
+			"imageURL": "images/Kshitij/Kshitij_73.webp",
+			"title": "Though protected, your freedom & credibility erode under constant surveillance & Mohit's growing fear",
+			"subtitle": "You stay alive but lose your moral footing - survival now comes at the cost of silence",
+			"karmaPoints": 10,
+			"emotionalCore": 10,
+			"links": [{ "text": "chevron_right", "to": 96, "karmaPoints": 0 }]
+		},
+		{
+			"id": 74,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_74.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 0, "karmaPoints": 0 }]
+		},
+		{
+			"id": 75,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_75.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 76, "karmaPoints": 0 }]
+		},
+		{
+			"id": 76,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_76.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 77, "karmaPoints": 0 }]
+		},
+		{
+			"id": 77,
+			"sceneType": "consequence",
+			"imageURL": "images/Kshitij/Kshitij_77.webp",
+			"title": "You become a symbol of integrity, but face relentless legal attacks and a strained relationship with Mohit amidst public support.",
+			"subtitle": "You embrace the truth but the weight of it isolates you from the life and love you once had.",
+			"links": [{ "text": "chevron_right", "to": 96, "karmaPoints": 0 }]
+		},
+		{
+			"id": 78,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_78.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 0, "karmaPoints": 0 }]
+		},
+		{
+			"id": 79,
+			"sceneType": "stage",
+			"imageURL": "/images/stage-divider-icons/stage 3.png",
+			"title": "Welcome to Stage 3: The Final Trial",
+			"subtitle": "There are no easy answers now—will you embrace the consequences of your past or rewrite your fate? In a world of shifting truths, only you can define what is just.The final choice is upon you!",
+			"links": [{ "text": "chevron_right", "to": 80, "karmaPoints": 0 }]
+		},
+		{
+			"id": 80,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_80.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "Rejoin the Corporate world", "to": 81, "karmaPoints": -20 }]
+		},
+		{
+			"id": 81,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_81.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 82, "karmaPoints": 0 }]
+		},
+		{
+			"id": 82,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_82.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 83, "karmaPoints": 0 }]
+		},
+		{
+			"id": 83,
+			"sceneType": "choice",
+			"imageURL": "images/Kshitij/Kshitij_83.webp",
+			"title": "What will you choose?",
+			"subtitle": "#",
+			"links": [
+			{ 
+				"text": "Sign the statement & retract", 
+				"to": 84, 
+				"karmaPoints": -20,
+				"emotionalCore": 20 
+			},
+			{ 
+				"text": "Fight from the shadows", 
+				"to": 88, 
+				"karmaPoints": 10,
+				"emotionalCore": 10 
+			},
+			{ 
+				"text": "Refuse & face it all", 
+				"to": 92, 
+				"karmaPoints": 20,
+				"emotionalCore": -20 
+			}
+		]
+		},
+		{
+			"id": 84,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_84.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 85, "karmaPoints": 0 }]
+		},
+		{
+			"id": 85,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_85.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 86, "karmaPoints": 0 }]
+		},
+		{
+			"id": 86,
+			"sceneType": "consequence",
+			"imageURL": "images/Kshitij/Kshitij_86.webp",
+			"title": "Though your career flourishes, your credibility is ruined & Mohit walks away, unable to respect your decision",
+			"subtitle": "You choose safety over truth, gaining success but losing your self-respect.",
+			"links": [{ "text": "chevron_right", "to": 96, "karmaPoints": 0 }]
+		},
+		{
+			"id": 87,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_87.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 0, "karmaPoints": 0 }]
+		},
+		{
+			"id": 88,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_88.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 89, "karmaPoints": 0 }]
+		},
+		{
+			"id": 89,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_89.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 90, "karmaPoints": 0 }]
+		},
+		{
+			"id": 90,
+			"sceneType": "consequence",
+			"imageURL": "images/Kshitij/Kshitij_90.webp",
+			"title": "Your credibility stays intact, but you fade into anonymity - unrecognized & unsupported by Mohit.",
+			"subtitle": "You keep the truth but lose yourself, caught between courage & concealment.",
+			"links": [{ "text": "chevron_right", "to": 96, "karmaPoints": 0 }]
+		},
+		{
+			"id": 91,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_91.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 0, "karmaPoints": 0 }]
+		},
+		{
+			"id": 92,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_92.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 93, "karmaPoints": 0 }]
+		},
+		{
+			"id": 93,
+			"sceneType": "normal",
+			"imageURL": "images/Kshitij/Kshitij_93.webp",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 94, "karmaPoints": 0 }]
+			
+		},
+		{
+			"id": 94,
+			"sceneType": "consequence",
+			"imageURL": "images/Kshitij/Kshitij_94.webp",
+			"title": "You're broken by the system but your legacy remains intact inspiring some journalists to fight for truth.",
+			"subtitle": "You stay rooted in truth, but the weight of the fight begins to crack your foundation.",
+			"karmaPoints": 20,
+			"emotionalCore": -20,
+			"links": [{ "text": "chevron_right", "to": 96, "karmaPoints": 0 }]
+			
+		},
+		{
+			"id": 96,
+			"sceneType": "ending",
+			"imageURL": "#",
+			"title": "#",
+			"subtitle": "#",
+			"links": [{ "text": "chevron_right", "to": 51, "karmaPoints": 0 }]
+		}
+	]
+}

@@ -11,7 +11,9 @@
 	<div
 		class="consequence-div body-text text-body border-r-2 border-b-2 border-l-2 border-border"
 	>
-		<p>Karma: {{ scene()?.karmaPoints }}</p>
+		<p>
+			Karma: <span class="ml-auto">{{ scene()?.karmaPoints }}</span>
+		</p>
 	</div>
 </div>
 } @else if (type === "emotional") {
@@ -19,11 +21,11 @@
 	<div
 		class="consequence-large-div body-text text-body border-r-2 border-b-2 border-l-2 border-border"
 	>
-		<small>
+		<small class="w-full text-left">
 			Emotional Core Imbalance:
-			<span>{{ scene()?.emotionalCore }}</span>
+			<span class="float-end mr-2">{{ scene()?.emotionalCore }}</span>
 			<br />
-			<p class="float-end text-wrap">{{ scene()?.subtitle }}</p>
+			<p class="text-wrap">{{ scene()?.subtitle }}</p>
 		</small>
 	</div>
 </div>
