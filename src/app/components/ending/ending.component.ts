@@ -1,4 +1,4 @@
-import { Component, effect, inject } from "@angular/core";
+import { Component, effect, HostBinding, inject } from "@angular/core";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { faStar, IconDefinition } from "@fortawesome/free-solid-svg-icons";
 import { GameStateService } from "../../services/game-state.service";
@@ -31,6 +31,14 @@ export class EndingComponent {
 		this.finalEmotionalCore = this.storyController.emotionalCore() ?? 0;
 		this.getFinalEnding();
 		console.log("Final Ending", this.finalEnding);
+	}
+
+	@HostBinding("class.scene-wrapper") get SceneWrapper() {
+		return true;
+	}
+
+	@HostBinding("class.fade-in") get FadeIn() {
+		return true;
 	}
 
 	getPlayerImage(): string {

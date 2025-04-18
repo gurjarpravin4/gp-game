@@ -11,7 +11,7 @@
 			<fa-icon [icon]="homeIcon"></fa-icon>
 		</button>
 		<button
-			(click)="storyController.setCurrentSceneId(nextScene)"
+			(click)="next()"
 			class="material-symbols-outlined continue-btn"
 		>
 			{{scene()?.links?.[0]?.text}}

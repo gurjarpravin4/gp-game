@@ -6,10 +6,10 @@ const config: CapacitorConfig = {
 	webDir: "dist/gp-game/browser",
 	plugins: {
 		SplashScreen: {
-			launchShowDuration: 3000,
+			launchShowDuration: 1500,
 			launchAutoHide: true,
-			launchFadeOutDuration: 3000,
-			backgroundColor: "#ffffffff",
+			launchFadeOutDuration: 500,
+			backgroundColor: "#2f0446",
 			androidSplashResourceName: "splash",
 			androidScaleType: "CENTER_CROP",
 			showSpinner: true,

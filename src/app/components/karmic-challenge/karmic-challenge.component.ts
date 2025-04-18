@@ -9,4 +9,9 @@ import { GameStateService } from "../../services/game-state.service";
 })
 export class KarmicChallengeComponent {
 	gameState = inject(GameStateService);
+
+	getElementIcon(): string {
+		const element = this.gameState.Player()?.element;
+		return `/icons/${element}.png`;
+	}
 }

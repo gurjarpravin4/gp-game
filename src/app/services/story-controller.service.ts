@@ -36,7 +36,7 @@ export class StoryControllerService {
 
 	loadStory() {
 		this.http
-			.get<Story>(`stories/${this.character()}.json`)
+			.get<Story>(`stories/${this.gameState.Player()?.firstName}.json`)
 			.subscribe((data) => {
 				// set the story
 				this.story.set(data);
